@@ -26,8 +26,13 @@ Installation (assuming Firefox)
 
 TODO LIST
 -------------------------------
+* fix watcher menus
+* fix other menus
 * fix picture captcha popout
 * fix broken catalog
+* find way to add in file info
+* maybe add icons
+* maybe make drawer hover over posts
 * get better header image
 
 [1]: https://github.com/ccd0/4chan-x
