@@ -33,6 +33,7 @@ TODO LIST
 * find way to add in file info
 * maybe add icons
 * maybe make drawer hover over posts
+* maybe add more colors
 * get better header image
 
 [1]: https://github.com/ccd0/4chan-x
