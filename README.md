@@ -1,6 +1,6 @@
 ![screenshot](https://raw.githubusercontent.com/commit-sudoku/zairyou/master/screenshot.png)
 
- 材料
+ ZAIRYŌ - 材料
 -----------
 
 * This style is written to work with ccd'0s 4chanX fork available [here] [1].
