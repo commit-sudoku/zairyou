@@ -21,6 +21,14 @@ Installation (assuming Firefox)
 -------------------------------
 
 * Install the Stylish extension to manage your userstyles; once installed, just click on "Write New Style", give it a name, and paste the CSS there.
+* CTRL + F 'FILE GOES HERE'
+* replace with a path to your 1920*64 header image
+
+TODO LIST
+-------------------------------
+* fix picture captcha popout
+* fix broken catalog
+* get better header image
 
 [1]: https://github.com/ccd0/4chan-x
 [2]: https://github.com/mudanaku/
