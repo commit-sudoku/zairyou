@@ -30,6 +30,7 @@ TODO LIST
 * fix other menus
 * fix picture captcha popout
 * fix broken catalog
+* fix quick reply getting stuck
 * find way to add in file info
 * maybe add icons
 * maybe make drawer hover over posts
