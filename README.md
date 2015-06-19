@@ -1,6 +1,6 @@
 ![screenshot](https://raw.githubusercontent.com/commit-sudoku/zairyou/master/screenshot.png)
 
- ZAIRYŌ - 材料
+材料 - ZAIRYŌ
 -----------
 
 * This style is written to work with ccd'0s 4chanX fork available [here] [1].
@@ -13,7 +13,7 @@
 
 * Toggle the sidebar by toggling header auto-hide (Default keybind is shift + h).
 
-* Click "見てのスレッド" to open the thread watcher menu.
+* Click "掲示板" to open the full board list.
 
 * Click "見てのスレッド" to open the thread watcher menu.
 
