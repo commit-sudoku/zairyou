@@ -21,7 +21,7 @@ Installation (assuming Firefox)
 -------------------------------
 
 * Install the Stylish extension to manage your userstyles; once installed, just click on "Write New Style", give it a name, and paste the CSS there.
-* CTRL + F 'FILE GOES HERE'
+* CTRL + F 'http://i.imgur.com/YXVTjQ4.png'
 * replace with a path to your 1920*64 header image
 
 TODO LIST
@@ -35,7 +35,7 @@ TODO LIST
 * maybe add icons
 * maybe make drawer hover over posts
 * maybe add more colors
-* get better header image
+* ~~get better header image~~
 
 [1]: https://github.com/ccd0/4chan-x
 [2]: https://github.com/mudanaku/
