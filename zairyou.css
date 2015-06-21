@@ -12,6 +12,7 @@
 @-moz-document domain("boards.4chan.org") {
 
 /*
+  
     MAIN LAYOUT
 
 */
@@ -57,8 +58,10 @@ body {
   margin-bottom: 10px !important;
 }
 
-/**
+/*
+  
     4chan updates
+  
 */
     
 .boardBanner,
@@ -514,18 +517,6 @@ a.show-board-list-button::after,
   font-family: "Roboto" !important;
 }
 
-/* .cataloglink a::before,
-.navLinks.navLinksBot a[href*="catalog"]::after {
-  content: "×";
-  position: fixed !important;
-  right: 101px !important;
-  top: 20px !important;
-  z-index: 36 !important;
-  font-size: 11pt !important;
-  font-family: "Roboto" !important;
-  pointer-events: none!important;
-} */
-
 .cataloglink a[href*="archive"] {
   display: none !important;
 }
@@ -707,8 +698,10 @@ a.entry.unwatch-thread {
   border-color:#3F51B5!important;
 }
 
-/**
+/*
+  
     Global Message
+  
 */
 
 .hide-announcement {
@@ -756,8 +749,10 @@ a.entry.unwatch-thread {
   font-weight: normal !important;
 }
 
-/**
+/*
+  
     Main Colours
+  
 */
 
 #thread-watcher::before,
@@ -972,13 +967,6 @@ a.quotelink {
   padding-right: 5px !important;
 }
 
-/* .subject::after {
-  content: " - " !important;
-  color: #ababab !important;
-  font-weight: normal !important;
-} */
-
-  
 .quote a,
 .prettyprint a,
 .prettyprint a:hover {
@@ -1014,8 +1002,10 @@ a.quotelink {
   color: #2f4052 !important;
 }
 
-/**
+/*
+  
     Page Links
+  
 */
 
 .pagelist {
@@ -1051,8 +1041,10 @@ a.quotelink {
   box-shadow: none !important;
 }
 
-/**
+/*
+  
     Settings screen
+  
 */
 
 #options.reply.dialog {
@@ -1627,8 +1619,10 @@ textarea:focus {
 
 }
 
-/**
-    Recaptcha
+/*
+
+    RECAPTCHA
+
 */
 
 @-moz-document regexp("https?://.*.(google.com/recaptcha/api2).*") {
