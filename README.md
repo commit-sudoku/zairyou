@@ -33,12 +33,12 @@ TODO LIST
 * fix watcher menus
 * fix other menus
 * fix picture captcha popout
-* fix broken catalog
 * find way to add in file info
 * maybe add icons
 * maybe make drawer hover over posts
 * maybe add more colors
 * add bigger backlink icons
+* ~~fix broken catalog~~
 * ~~fix quick reply getting stuck~~
 * ~~get better header image~~
 
