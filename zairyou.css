@@ -1519,7 +1519,7 @@ input[name="sub"] {
   left: 5px !important;
   right: auto !important;
   bottom: 18px !important;
-  text-align: center !important;
+  text-align: left !important;
   top: auto !important;
   border: none !important;
   z-index: 4 !important;
