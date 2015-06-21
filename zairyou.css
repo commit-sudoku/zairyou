@@ -1,5 +1,5 @@
-/*
-
+/* 
+  
   材料 - ZAIRYOU
 
   github.com/commit-sudoku/zairyou
@@ -60,7 +60,7 @@ body {
 /**
     4chan updates
 */
-
+    
 .boardBanner,
 table#blotter.desktop {
   display: none !important;
@@ -69,21 +69,21 @@ table#blotter.desktop {
 div.navLinks.desktop {
   margin-top: 0px !important;
 }
-
+    
 /*
-
+  
   TOP BAR + SIDE BAR
-
+  
 */
 
- #board-list::before {                         /* BLACK HEADER BAR */
+ #board-list::before {                        
   display: inline !important;
   content: "" !important;
   background-color: #3F51B5 !important;
   background-size: cover !important;
   background-position: 50% 50% !important;
-  background-image: url('http://i.imgur.com/YXVTjQ4.png') !important; /* pink tokyo bg */
-  /* background-image: url('http://i.imgur.com/2Uw0eQQ.png') !important; */ /* purple melborne bg */
+  /* background-image: url('http://i.imgur.com/YXVTjQ4.png') !important; */ /* pink tokyo bg */
+  background-image: url('http://i.imgur.com/2Uw0eQQ.png') !important; /* purple melborne bg */
   /* background-image: url('http://i.imgur.com/xCq5ERi.png') !important; */ /* tokyo night bg */
   position: fixed !important;
   top: 0px !important;
@@ -169,22 +169,22 @@ a.show-board-list-button,
   top: 70px !important;
   left: 0px !important;
 }
-
+  
 a.show-board-list-button::after,
 .show-board-list-button::after,
 .show-board-list-button::after {
   content: "+++++++++++++++++++++++++++++++++++" !important;
 }
-
+  
 .autohide body {
   margin-left: -167px !important;
 }
 
-#header-bar.autohide {
+#header-bar.autohide { 
   position: fixed !important;
   top: -10px !important;
-}
-
+} 
+  
 #board-list {
   position: fixed !important;
   left: -100px !important;
@@ -192,7 +192,7 @@ a.show-board-list-button::after,
   height: 100% !important;
   width: 158px !important;
   text-align: left !important;
-
+  
 }
 
 #custom-board-list {
@@ -208,7 +208,7 @@ a.show-board-list-button::after,
   margin:0!important;
   margin-right:-50px!important;
 }
-
+  
 #full-board-list {
   display:inline !important;
   visibility: hidden !important;
@@ -427,17 +427,17 @@ a.show-board-list-button::after,
   height: 100% !important;
   width: 100% !important;
   padding-bottom:0px!important;
-}
-
-
+} 
+  
+  
 .opContainer {
   height: 100% !important;
 }
-
+  
 .watch-thread-link {
   position: relative !important;
-  margin-right: 3px !important;
-  top: 3px !important;
+  margin-right: -5px !important;
+  top: 2px !important;
   left: -9px !important;
   width: 17px !important;
 }
@@ -451,7 +451,7 @@ a.show-board-list-button::after,
   width: auto !important;
   display: block !important;
 }
-
+  
 .postInfo {
   width: auto !important;
   margin-left: 6px !important;
@@ -481,7 +481,7 @@ a.show-board-list-button::after,
   margin-bottom: 0px !important;
 }
 
-
+  
 .fileThumb > img:first-child {
   margin-right: -5px !important;
   margin-left: -14px !important;
@@ -502,7 +502,7 @@ a.show-board-list-button::after,
   font-size: 0 !important;
   color: #ffffff !important;
 }
-
+  
 .cataloglink a::after, #a settings-link.fa.fa-wrenchm,
 .navLinks.navLinksBot a[href*="catalog"]::before {
   content: "カタログ" !important;
@@ -545,9 +545,9 @@ a.show-board-list-button::after,
   font-family: "Roboto" !important;
   content: "設定" !important;
   font-size: 11pt !important;
-
+  
 }
-
+  
 #menu.dialog:not(.left) {
   background: white !important;
   position: fixed !important;
@@ -567,7 +567,7 @@ a.show-board-list-button::after,
 a.entry.unwatch-thread {
   display: none !important;
 }
-
+  
 #menu.dialog:not(.left) .submenu {
   background: white !important;
   width: 200px !important;
@@ -632,7 +632,7 @@ a.entry.unwatch-thread {
 #thread-watcher div {
   margin-top:0px!important;
   padding-right:15px!important;
-  padding-bottom:1px!important;
+  padding-bottom:1px!important; 
 }
 
 #thread-watcher a {
@@ -655,8 +655,8 @@ a.entry.unwatch-thread {
 #thread-watcher .refresh,
 #thread-watcher .fa.fa-times {
   display: none !important;
-}
-
+}   
+    
 #thread-watcher .menu-button,
 #thread-watcher .menu-button:hover,
 #thread-watcher .menu-button::after{
@@ -666,8 +666,8 @@ a.entry.unwatch-thread {
   width: 105px !important;
   top: 3px !important;
   right: 10px !important;
-}
-
+} 
+    
 #thread-watcher a.entry:nth-child(1),
 #thread-watcher a.entry:nth-child(2),
 #thread-watcher a.entry:nth-child(3) {
@@ -677,7 +677,7 @@ a.entry.unwatch-thread {
   top: 2px !important;
   width: 170px !important;
 }
-
+    
 #thread-watcher span.entry {
   font-size: 12pt !important;
   margin-top: 1px !important;
@@ -805,7 +805,7 @@ body {
 .inline .backlink:hover,
 .postMessage .linkify:hover,
 .embedder:hover,
-
+  
 /* .fileText a:hover, */
 .summary:hover,
 #thread-watcher a:hover,
@@ -823,11 +823,11 @@ body {
   font-size: 12pt !important;
   color: #5f5f65 !important;
 }
-
+  
 .ip-counter{
   font-size: 12pt !important;
 }
-
+  
 .name {
   font-family: Roboto !important;
   font-size: 12pt !important;
@@ -849,7 +849,7 @@ a.useremail[href*='Sage'] .postertrip,
 a.useremail[href*='SAGE'] .postertrip {
   color: #a16c6c !important;
   font-weight: normal !important;
-}
+} 
 
 a.useremail[href*='sage'] .name:hover,
 a.useremail[href*='Sage'] .name:hover,
@@ -871,11 +871,11 @@ a.useremail[href*='SAGE'] .postertrip:hover {
 .dateTime {
   font-family: Roboto !important;
   font-size: 12pt !important;
-  padding-left: 12px !important;
-  padding-right: 12px !important;
+  padding-left: 4px !important;
+  padding-right: 4px !important;
   color: #a5a5a5 !important;
 }
-
+  
 .pages a,
 .summary {
   color: #a6a6a6 !important;
@@ -891,7 +891,7 @@ a.useremail[href*='SAGE'] .postertrip:hover {
   margin-left: -5px !important;
   top: 20px !important;
 }
-
+  
 .backlink,
 .inline .backlink,
 a.quotelink {
@@ -912,6 +912,8 @@ a.quotelink {
 .postMessage strong {
   color: #d56b6b !important;
   font-weight: normal !important;
+  font-size: 12pt !important;
+  margin-right: 5px !important;
 }
 
 .backlink {
@@ -921,7 +923,7 @@ a.quotelink {
 .backlink:first-of-type {
   margin-left: 10px !important;
 }
-
+    
 .backlink:after {
   content: url('http://i.imgur.com/ruSV1ja.png') !important;
   font-size: 9pt !important;
@@ -940,7 +942,7 @@ a.quotelink {
 
 .highlight-you:root .quotesYou > .post.reply {
   box-shadow: 0 0 0 1px rgba(173, 69, 65, .5)!important;
-  border: none !important;
+  border: none !important;  
 }
 
 .exblock.reply,
@@ -967,7 +969,7 @@ a.quotelink {
   color: #ababab !important;
   font-size: 12pt !important;
   font-weight: normal !important;
-  padding-right: 13px !important;
+  padding-right: 5px !important;
 }
 
 /* .subject::after {
@@ -976,7 +978,7 @@ a.quotelink {
   font-weight: normal !important;
 } */
 
-
+  
 .quote a,
 .prettyprint a,
 .prettyprint a:hover {
@@ -1100,9 +1102,9 @@ a.quotelink {
 }
 
 /*
-
+  
   QUICK REPLY
-
+  
 */
 
 #qr {
@@ -1117,6 +1119,8 @@ a.quotelink {
   top: -216px !important;
   right: 8px !important;
   left: auto !important;
+  bottom: auto !important;
+  height: auto !important;
   width: 304px !important;
   background: #fff !important;
   box-shadow: none !important;
@@ -1125,30 +1129,17 @@ a.quotelink {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important;
 }
 
-#qr.dialog.has-spoiler.reply-to-thread.has-captcha.focus,
-#qr.dialog.reply-to-thread.has-captcha, #qr.dialog.has-captcha,
-#qr.dialog.reply-to-thread.has-captcha.focus {
-  visibility: visible !important;
-  top: 72px !important;
-  min-height:242px !important;
-}
-
-#qr.dialog.has-spoiler.reply-to-thread.has-captcha.focus.captcha-open,
-#qr.dialog.reply-to-thread.has-captcha.captcha-open.focus,
-#qr.dialog.reply-to-thread.has-captcha.captcha-open {
-  visibility: visible !important;
-  top: 72px !important;
-  min-height:326px !important;
-}
-
 #qr.dialog.has-captcha:not([Hidden]),
-#qr.dialog:not([Hidden]),
-#qr.dialog.has-captcha, #qr.dialog.reply-to-thread.has-captcha {
+#qr.dialog:not([Hidden]) {
+  visibility: visible !important;
+  top: 72px !important;
+}
+
+#qr.dialog.has-captcha {
   top:-298px !important;
   transition: all 0.9s ease;
-  height:246px
 }
-
+  
 #qr .move {
   position: fixed !important;
   float: right !important;
@@ -1249,7 +1240,7 @@ textarea:-moz-placeholder {
 }
 
 #qr [type=file] [type=text]:focus {
-  border: 1px solid grey !important;
+  border: 1px solid grey !important; 
 }
 
 textarea,
@@ -1359,9 +1350,9 @@ input[name="sub"] {
 }
 
 /*
-
+  
     MENU BUTTON
-
+  
 */
 
 .postContainer .menu-button {
@@ -1388,24 +1379,24 @@ input[name="sub"] {
 
 .postContainer .menu-button:hover::after {
   color: #6482a1 !important;
-}
-
+} 
+ 
 .menu-button:hover::after {
   color: #666 !important;
 }
-
-
+ 
+ 
 #menu.reply.dialog {
   display: block !important;
   margin-left: 0 !important;
   margin-top: -1px !important;
   border: 1px solid #ccc !important;
 }
-
+ 
 .subMenu {
   left: -105px !important;
   width: 100px !important;
-}
+}  
 
 .entry,
 .entry a,
@@ -1423,9 +1414,9 @@ input[name="sub"] {
 
 
 /*
-
+  
     Hide threads / posts
-
+  
 */
 
 .stub span,
@@ -1499,7 +1490,7 @@ input[name="sub"] {
   color: #999 !important;
   font-family: "Roboto" !important;
 }
-
+ 
 .stub a {
   margin-left: 0px !important;
   color: #999 !important;
@@ -1513,9 +1504,9 @@ input[name="sub"] {
 }
 
 /*
-
+  
     UPDATER
-
+  
 */
 
 #thread-stats {
@@ -1536,6 +1527,7 @@ input[name="sub"] {
   left: 5px !important;
   right: auto !important;
   bottom: 18px !important;
+  text-align: center !important;
   top: auto !important;
   border: none !important;
   z-index: 4 !important;
@@ -1596,7 +1588,7 @@ body {
   text-align: center !important;
 }
 
-
+  
 #ctrl,
 #qf-ctrl.button {
   font-size: 9pt !important;
@@ -1611,7 +1603,7 @@ body {
   outline: none !important;
 }
 
-input:focus,
+input:focus, 
 textarea:focus {
   border: none !important;
 }
@@ -1640,18 +1632,18 @@ textarea:focus {
 */
 
 @-moz-document regexp("https?://.*.(google.com/recaptcha/api2).*") {
-
+  
 *:not([class*="recaptcha-checkbox"]) {
-  color: #3F51B5 !important;
+  color: #3F51B5 !important; 
   background: #fff !important;
   border-color: #fff !important;
   border-radius: 0 !important;
 }
-
+  
 .rc-anchor-center-container {
     border: solid 2px white !important;
     width: 299px !important;
-}
+} 
 
 /* .rc-inline-block {
   width: 306px !important;
@@ -1659,7 +1651,7 @@ textarea:focus {
 
 .rc-anchor-checkbox-label {
   position: fixed !important;
-  text-align: left !important;
+  text-align: left !important; 
   margin-top: -35px !important;
   margin-left: 93px !important;
   z-index: 1 !important;
@@ -1670,18 +1662,18 @@ textarea:focus {
   content: "ロボットではない" !important;
   font-size: 12pt !important;
 }
-
-.rc-anchor-checkbox {
+  
+.rc-anchor-checkbox { 
   margin: 0px 12px 22px 135px !important;
   z-index: 2 !important;
 }
-
-.recaptcha-checkbox-border {
-  background: #e5e5e5 !important;
+  
+.recaptcha-checkbox-border { 
+  background: #e5e5e5 !important; 
+} 
+ 
+.rc-anchor-normal-footer { 
+  display: none !important; 
 }
-
-.rc-anchor-normal-footer {
-  display: none !important;
-}
-
+  
 }
