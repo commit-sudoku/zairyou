@@ -7,7 +7,7 @@
 
 */
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300italic,400italic,500,300,700,500italic,700italic,900,900italic);
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document domain("boards.4chan.org") {
 
@@ -125,7 +125,7 @@ div.navLinks.desktop {
 #header-bar {
   top: 60px !important;
   height: 0px !important;
-  width: 158px !important;
+  width: 247px !important;
   box-shadow: none !important;
   font-family: "Roboto" !important;
 }
@@ -180,7 +180,7 @@ a.show-board-list-button::after,
 }
   
 .autohide body {
-  margin-left: -167px !important;
+  margin-left: 24px !important;
 }
 
 #header-bar.autohide { 
@@ -897,7 +897,8 @@ a.quotelink {
 .backlink.inlined,
 .inlined {
   color: #5f5f65 !important;
-  font-style: italic !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
   opacity: 1 !important;
 }
 
@@ -1082,7 +1083,7 @@ a.quotelink {
 
 .dialog a,
 .dialog label {
-  text-decoration:none!important;
+  text-decoration: none !important;
 }
 
 #optionsContent > input:checked + div,
@@ -1557,7 +1558,7 @@ input[name="sub"] {
 
 body {
   color: #5F5F5F !important;
-  margin-left: 190px !important;
+  margin-left: 280px !important;
   margin-right: 23px !important;
 }
 
@@ -1586,7 +1587,7 @@ body {
   font-size: 9pt !important;
   color: #5f5f5f !important;
   text-decoration: none !important;
-  margin-top: 77px !important;
+  margin-top: 79px !important;
   margin-left : auto !important;
   margin-right : auto !important;
 }
