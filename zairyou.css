@@ -80,8 +80,11 @@ div.navLinks.desktop {
   display: inline !important;
   content: "" !important;
   background-color: #3F51B5 !important;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
   background-image: url('http://i.imgur.com/YXVTjQ4.png') !important; /* pink tokyo bg */
   /* background-image: url('http://i.imgur.com/2Uw0eQQ.png') !important; */ /* purple melborne bg */
+  /* background-image: url('http://i.imgur.com/xCq5ERi.png') !important; */ /* tokyo night bg */
   position: fixed !important;
   top: 0px !important;
   left: 0px !important;
