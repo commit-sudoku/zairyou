@@ -22,11 +22,12 @@
 Installation (assuming Firefox)
 -------------------------------
 
+* This CSS uses Roboto so if you don't have it, you can grap it [here] [4].
 * Install the Stylish extension to manage your userstyles; once installed, just click on "Write New Style", give it a name, and paste the CSS there.
 * CTRL + F 'http://i.imgur.com/YXVTjQ4.png'.
 * Replace with a path to your 1920*64 header image.
 * Go into your 4chan X settings.
-* Turn OFF 'Persistent QR'
+* Turn OFF 'Persistent QR', I'm not sure if there are any other settings needed so my settings are [here] [4].
 
 TODO LIST
 -------------------------------
@@ -45,3 +46,5 @@ TODO LIST
 [1]: https://github.com/ccd0/4chan-x
 [2]: https://github.com/mudanaku/
 [3]: http://i.imgur.com/opfVRLw.png
+[4]: http://material-design.storage.googleapis.com/downloads/RobotoTTF.zip
+[5]: http://i.imgur.com/x970AkQ.png
