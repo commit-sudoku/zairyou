@@ -27,7 +27,7 @@ Installation (assuming Firefox)
 * CTRL + F 'http://i.imgur.com/YXVTjQ4.png'.
 * Replace with a path to your 1920*64 header image.
 * Go into your 4chan X settings.
-* Turn OFF 'Persistent QR', I'm not sure if there are any other settings needed so my settings are [here] [4].
+* Turn OFF 'Persistent QR', I'm not sure if there are any other settings needed for it to look right, so my settings are [here] [4].
 
 TODO LIST
 -------------------------------
