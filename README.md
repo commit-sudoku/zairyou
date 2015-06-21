@@ -17,12 +17,16 @@
 
 * Click "見てのスレッド" to open the thread watcher menu.
 
+* Press 'Q' to open quick reply.
+
 Installation (assuming Firefox)
 -------------------------------
 
 * Install the Stylish extension to manage your userstyles; once installed, just click on "Write New Style", give it a name, and paste the CSS there.
-* CTRL + F 'http://i.imgur.com/YXVTjQ4.png'
-* replace with a path to your 1920*64 header image
+* CTRL + F 'http://i.imgur.com/YXVTjQ4.png'.
+* Replace with a path to your 1920*64 header image.
+* Go into your 4chan X settings.
+* Turn OFF 'Persistent QR'
 
 TODO LIST
 -------------------------------
@@ -30,11 +34,11 @@ TODO LIST
 * fix other menus
 * fix picture captcha popout
 * fix broken catalog
-* fix quick reply getting stuck
 * find way to add in file info
 * maybe add icons
 * maybe make drawer hover over posts
 * maybe add more colors
+* ~~fix quick reply getting stuck~~
 * ~~get better header image~~
 
 [1]: https://github.com/ccd0/4chan-x
