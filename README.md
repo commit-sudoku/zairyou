@@ -38,6 +38,7 @@ TODO LIST
 * maybe add icons
 * maybe make drawer hover over posts
 * maybe add more colors
+* add bigger backlink icons
 * ~~fix quick reply getting stuck~~
 * ~~get better header image~~
 
