@@ -2,7 +2,7 @@
   
   材料 - ZAIRYOU
 
-  commit-sudoku.github.io/zairyou/
+  github.com/commit-sudoku/zairyou
 
 
 */
@@ -480,7 +480,7 @@ a.show-board-list-button::after,
 
 .postMessage {
   margin-left: 5px !important;
-  margin-top: 2px !important;
+  margin-top: 4px !important;
   margin-bottom: 0px !important;
 }
 
@@ -1104,7 +1104,13 @@ a.quotelink {
   border-radius: 5px !important;
 }
 
-#qr.dialog { /* QUICK REPLY */
+#qr > form {
+    max-height: calc(100vh - 75px);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+  
+#qr.dialog { 
   padding: 5px !important;
   position: fixed !important;
   display: inline !important;
@@ -1158,7 +1164,7 @@ a.quotelink {
 }
 
 textarea.field {
-  height: 17em !important;
+  height: 20em !important;
   margin-bottom: 0px !important;
 }
 
@@ -1166,9 +1172,18 @@ textarea.field {
   border: none !important;
 }
 
-.field:hover,
-.field:focus {
+.field:hover {
   box-shadow: none !important;
+}
+  
+.field:focus,
+input:focus,
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input:focus:not([type]), 
+textarea:focus{
+  box-shadow: none !important;
+  border-color: #3F51B5 !important;
 }
 
 input:-moz-placeholder,
@@ -1513,6 +1528,7 @@ input[name="sub"] {
   font-size: 9pt !important;
   color: #b3b3b3 !important;
   background: none !important;
+  text-align: left !important;
 }
 
 #update-timer {
@@ -1530,6 +1546,7 @@ input[name="sub"] {
 }
 
 #update-status.new {
+  text-align: left !important;
   color: #093 !important;
   position: fixed !important;
   left: 25px !important;
