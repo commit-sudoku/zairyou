@@ -1,15 +1,15 @@
-![screenshot](https://raw.githubusercontent.com/commit-sudoku/zairyou/master/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/commit-sudoku/zairyou/gh-pages/threads.png)
 
 材料 - ZAIRYŌ
 -----------
 
-* This style is written to work with ccd'0s 4chanX fork available [here] [1].
+* This style is written only to work with ccd'0s 4chanX fork.
+
+* This style currently only works on firefox.
 
 * Big thanks to [mudanaku] [2] for updating and fixing this style.
 
 * To get the board links to display properly, use the custom navigation found in the advanced section of the settings. Click [here] [3] for an example.
-
-* Sadly, many parts of the stylesheet break when used on Chrome. I may get around to fixing it one day, but I wouldn't count on it. Sorry.
 
 * Toggle the sidebar by toggling header auto-hide (Default keybind is shift + h).
 
@@ -19,14 +19,22 @@
 
 * Press 'Q' to open quick reply.
 
-Installation (assuming Firefox)
+Installation
 -------------------------------
 
-* Install the Stylish extension to manage your userstyles; once installed, just click on "Write New Style", give it a name, and paste the CSS there.
-* CTRL + F 'http://i.imgur.com/YXVTjQ4.png'.
-* Replace with a path to your 1920*64 header image.
+* Install [ccd0's 4chanX] [1] userscript. 
+* Install the [Stylish] [6] extension. 
+* Navigate to the userstyles section of the [Addons] [4] page. 
+* Click on "Write New Style", give it a name, and paste the CSS there. 
 * Go into your 4chan X settings.
 * Turn OFF 'Persistent QR', I'm not sure if there are any other settings needed for it to look right, so my settings are [here] [5].
+
+Customization
+-------------------------------
+
+CTRL + F 'http://i.imgur.com/2Uw0eQQ.png' and replace it with a path to your own 1920x64 header image or use the ones I left commented.
+
+CTRL + F '#3F51B5' and replace it with a hexdecimal color of your choice to change the accent color. 
 
 TODO LIST
 -------------------------------
@@ -44,6 +52,7 @@ TODO LIST
 
 [1]: https://github.com/ccd0/4chan-x
 [2]: https://github.com/mudanaku/
-[3]: http://i.imgur.com/opfVRLw.png
-[4]: http://material-design.storage.googleapis.com/downloads/RobotoTTF.zip
+[3]: https://raw.githubusercontent.com/commit-sudoku/zairyou/gh-pages/boardshelp.png
+[4]: about:addons
 [5]: http://i.imgur.com/x970AkQ.png
+[6]: https://addons.mozilla.org/en-us/firefox/addon/stylish/
