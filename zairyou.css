@@ -42,8 +42,8 @@ hr,
 }
 
 body {
-  margin-left: 90px !important;
-  margin-top: -10px !important;
+  margin-left: 280px !important;
+  margin-right: 0px !important;
   font-family: "Roboto" !important;
 }
 
@@ -54,7 +54,7 @@ body {
 .board {
   margin-top: 72px !important;
   margin-right: 75px !important;
-  margin-left: 242px !important;
+  margin-left: 51px !important;
   margin-bottom: 10px !important;
 }
 
@@ -483,7 +483,6 @@ a.show-board-list-button::after,
   margin-top: 4px !important;
   margin-bottom: 0px !important;
 }
-
   
 .fileThumb > img:first-child {
   margin-right: -5px !important;
@@ -1575,8 +1574,6 @@ input[name="sub"] {
 
 body {
   color: #5F5F5F !important;
-  margin-left: 280px !important;
-  margin-right: 23px !important;
 }
 
 #content {
