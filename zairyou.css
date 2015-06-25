@@ -7,7 +7,7 @@
 
 */
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300italic,400italic,500,300,700,500italic,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic);
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document domain("boards.4chan.org") {
 
@@ -96,6 +96,10 @@ div.navLinks.desktop {
 /*   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important; */
 }
 
+div.post div.postInfo span.postNum a:hover, .posteruid .hand:hover {
+    color: #3F51B5 !important;
+}
+  
 #shortcuts::after {
   content: "" !important;
   position: fixed !important;
@@ -364,6 +368,7 @@ a.show-board-list-button::after,
 .postNum span {
   font-size: 0 !important;
 }
+  
 
 .post.reply {
   background: transparent !important;
@@ -424,6 +429,7 @@ a.show-board-list-button::after,
 #credits a {
   text-decoration: none !important;
 }
+
 
 .op {
   display: table !important;
@@ -879,6 +885,11 @@ a.useremail[href*='SAGE'] .postertrip:hover {
   font-size: 12pt !important;
   color: #818181 !important;
 }
+  
+/* .postNum a::before {
+  content: "#" !important;
+  font-size: 12pt !important;
+} */
 
 .container {
   display: inline !important;
@@ -938,6 +949,12 @@ a.quotelink {
 .highlight-you:root .quotesYou > .post.reply {
   box-shadow: 0 0 0 1px rgba(173, 69, 65, .5)!important;
   border: none !important;  
+}
+  
+.quotelink.forwardlink {
+  border-bottom: 1px dotted !important;
+/*   text-decoration: underline !important;
+  text-decoration-style: dotted !important; */
 }
 
 .exblock.reply,
@@ -1084,6 +1101,12 @@ a.quotelink {
 .dialog label {
   text-decoration: none !important;
 }
+  
+#arc-sort{
+  border-bottom:1px dotted;
+  cursor:pointer;
+}
+
 
 #optionsContent > input:checked + div,
 #updater:hover > div,
