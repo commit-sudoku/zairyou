@@ -56,7 +56,7 @@
   body {
     margin-left: 280px !important;
     margin-right: 0px !important;
-    font-family: "Roboto" !important;
+    font-family: "Roboto", "Meiryo" !important;
   }
 
   *:active, *:focus {
@@ -138,7 +138,7 @@
     height: 0px !important;
     width: 247px !important;
     box-shadow: none !important;
-    font-family: "Roboto" !important;
+    font-family: "Roboto", "Meiryo" !important;
   }
 
   #notifications {
@@ -508,7 +508,7 @@
     top: 22px !important;
     z-index: 36 !important;
     font-size: 11pt !important;
-    font-family: "Roboto" !important;
+    font-family: "Roboto", "Meiryo" !important;
   }
 
   .gallery-link > .dialog.submenu {
@@ -523,7 +523,7 @@
   }
 
   .settings-link.fa-wrench:before {
-    font-family: "Roboto" !important;
+    font-family: "Roboto", "Meiryo" !important;
     content: "設定" !important;
     font-size: 11pt !important;
     
@@ -1474,7 +1474,7 @@
   .hide-reply-button.stub .menu-button {
     font-size: 0px !important;
     color: transparent !important;
-    font-family: "Roboto" !important;
+    font-family: "Roboto", "Meiryo" !important;
     margin-top: 3px !important;
     margin-right: 3px !important;
   }
@@ -1486,13 +1486,13 @@
     content: "+" !important;
     font-size: 9pt !important;
     color: #999 !important;
-    font-family: "Roboto" !important;
+    font-family: "Roboto", "Meiryo" !important;
   }
    
   .stub a {
     margin-left: 0px !important;
     color: #999 !important;
-    font-family: "Roboto" !important;
+    font-family: "Roboto", "Meiryo" !important;
     font-size: 8pt !important;
     padding-left: 2px !important;
   }
