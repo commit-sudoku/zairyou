@@ -221,6 +221,7 @@
     white-space:normal!important;
     margin:0!important;
     margin-right:-50px!important;
+    display: inline !important;
   }
     
   #full-board-list {
@@ -773,11 +774,11 @@
     font-size: 14px !important;
   }
 
-  #header-bar a:not(.entry):not(.close),
+  #header-bar a:not(.entry):not(.close):not(span.boardList),
   #watched-threads .watcher-title {
    padding-top: 2px !important; 
    padding-bottom: 2px !important; 
-   display: block;
+   display: block !important;;
   }
   
   #dump-button:hover,
