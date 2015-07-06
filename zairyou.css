@@ -307,7 +307,7 @@
     color: #fff !important;
     font-weight: 600 !important;
     text-transform: uppercase !important;
-    z-index: 999 !important;
+    z-index: 36 !important;
   }
 
   #board-list .current {
@@ -336,6 +336,10 @@
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   }
 
+  #a-gallery {
+    z-index: 999 !important;
+  }
+    
   .post.op {
     margin-top: -3px !important;
   /*   height: 100px !important; */
@@ -504,7 +508,7 @@
   .navLinks.navLinksBot a[href*="catalog"]::before {
     content: "カタログ" !important;
     position: fixed !important;
-    right: 117px !important;
+    right: 120px !important;
     top: 22px !important;
     z-index: 36 !important;
     font-size: 11pt !important;
@@ -526,6 +530,7 @@
     font-family: "Roboto", "Meiryo" !important;
     content: "設定" !important;
     font-size: 11pt !important;
+    margin-right: -8px !important;
     
   }
     
@@ -585,7 +590,7 @@
     width: 256px !important;
     padding: 5px 0 5px 0 !important;
     background: #f4f5f5 !important;
-    font-size: 11pt !important;
+    font-size: 12pt !important;
     font-weight: normal !important;
     position: absolute !important;
     left: 0 !important;
@@ -765,9 +770,16 @@
   #header-bar a {
     color: #aaa !important;
     font-weight: normal !important;
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
 
+  #header-bar a:not(.entry):not(.close),
+  #watched-threads .watcher-title {
+   padding-top: 2px !important; 
+   padding-bottom: 2px !important; 
+   display: block;
+  }
+  
   #dump-button:hover,
   .globalMessage a:hover,
   .hand,
