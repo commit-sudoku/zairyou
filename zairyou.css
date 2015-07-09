@@ -1571,6 +1571,11 @@
     font-size: 9pt !important;
     background: none !important;
   }
+  
+  #update-status:not(.empty) + #update-timer:not(.empty):not(.loading) {
+    margin-left: 0px !important;
+  }
+  
 }
 
 /*
