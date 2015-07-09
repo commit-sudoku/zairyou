@@ -125,7 +125,7 @@
     text-align: center !important;
     content: "掲示板" !important;
     width: 256px !important;
-    background: #f4f5f5 !important;
+    background: #f5f5f5 !important;
     font-size: 12pt !important;
     position: fixed !important;
     padding: 4px 0 6px 0 !important;
@@ -213,7 +213,7 @@
     display: inline !important;
     white-space: normal !important;
     position: relative !important;
-    top: 29px !important;
+    top: 35px !important;
     left: 106px !important;
   }
 
@@ -612,8 +612,8 @@
     z-index: 500 !important;
   }
 
-  #thread-watcher div {
-    margin-top:0px!important;
+  #thread-watcher div{
+    margin-top:4px !important;
     padding-right:15px!important;
     padding-bottom:1px!important; 
   }
@@ -774,11 +774,21 @@
     font-size: 14px !important;
   }
 
-  #header-bar a:not(.entry):not(.close):not(span.boardList),
-  #watched-threads .watcher-title {
-   padding-top: 2px !important; 
+  #custom-board-list a {
+   padding-top: 3px !important; 
    padding-bottom: 2px !important; 
-   display: block !important;;
+   display: block !important;
+  }
+  
+  #watched-threads .watcher-title,
+  .watcher-unread {
+   padding-top: 0px !important; 
+   padding-bottom: 0px !important; 
+   display: block !important;
+  }
+  
+  watched-threads {
+    margin-top: 5px !important;
   }
   
   #dump-button:hover,
