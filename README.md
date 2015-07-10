@@ -29,6 +29,7 @@ Installation
 * Go into your 4chan X settings.
 * Turn OFF 'Persistent QR', 'Thread Hiding Buttons', and 'Reply Hiding Buttons'
 * I'm not sure if there are any other settings needed for it to look right, so my settings are [here] [5].
+* Not necessary but [Source Han Sans] [7] is a great Japanese font, but if you don't have it installed this style will fall back to Meiryou
 
 Customization
 -------------------------------
@@ -57,3 +58,4 @@ TODO LIST
 [4]: about:addons
 [5]: http://i.imgur.com/x970AkQ.png
 [6]: https://addons.mozilla.org/en-us/firefox/addon/stylish/
+[7]: https://github.com/adobe-fonts/source-han-sans/tree/release
