@@ -56,7 +56,7 @@
   body {
     margin-left: 280px !important;
     margin-right: 0px !important;
-    font-family: "Roboto", "Source Han Sans JP Regular", "Meiryo" !important;
+    font-family: "Roboto", "Meiryo" !important;
   }
 
   *:active, *:focus {
@@ -138,7 +138,7 @@
     height: 0px !important;
     width: 247px !important;
     box-shadow: none !important;
-    font-family: "Roboto", "Source Han Sans JP Regular", "Meiryo" !important;
+    font-family: "Roboto", "Meiryo" !important;
   }
 
   #notifications {
@@ -213,7 +213,7 @@
     display: inline !important;
     white-space: normal !important;
     position: relative !important;
-    top: 35px !important;
+    top: 32px !important;
     left: 106px !important;
   }
 
@@ -513,7 +513,7 @@
     top: 22px !important;
     z-index: 36 !important;
     font-size: 11pt !important;
-    font-family: "Roboto", "Source Han Sans JP Regular", "Meiryo" !important;
+    font-family: "Roboto", "Meiryo" !important;
   }
 
   .gallery-link > .dialog.submenu {
@@ -528,7 +528,7 @@
   }
 
   .settings-link.fa-wrench:before {
-    font-family: "Roboto", "Source Han Sans JP Regular", "Meiryo" !important;
+    font-family: "Roboto", "Meiryo" !important;
     content: "設定" !important;
     font-size: 11pt !important;
     margin-right: -8px !important;
@@ -612,7 +612,7 @@
     z-index: 500 !important;
   }
 
-  #thread-watcher div{
+  #thread-watcher {
     margin-top:4px !important;
     padding-right:15px!important;
     padding-bottom:1px!important; 
@@ -780,15 +780,15 @@
    display: block !important;
   }
   
-  #watched-threads .watcher-title,
+  .watcher-title,
   .watcher-unread {
-   padding-top: 0px !important; 
+   padding-top: 1px !important; 
    padding-bottom: 0px !important; 
    display: block !important;
   }
   
-  watched-threads {
-    margin-top: 5px !important;
+  #watched-threads {
+    margin-top: 3px !important;
   }
   
   #dump-button:hover,
@@ -1497,7 +1497,7 @@
   .hide-reply-button.stub .menu-button {
     font-size: 0px !important;
     color: transparent !important;
-    font-family: "Roboto", "Source Han Sans JP Regular", "Meiryo" !important;
+    font-family: "Roboto", "Meiryo" !important;
     margin-top: 3px !important;
     margin-right: 3px !important;
   }
@@ -1509,13 +1509,13 @@
     content: "+" !important;
     font-size: 9pt !important;
     color: #999 !important;
-    font-family: "Roboto", "Source Han Sans JP Regular", "Meiryo" !important;
+    font-family: "Roboto", "Meiryo" !important;
   }
    
   .stub a {
     margin-left: 0px !important;
     color: #999 !important;
-    font-family: "Roboto", "Source Han Sans JP Regular", "Meiryo" !important;
+    font-family: "Roboto", "Meiryo" !important;
     font-size: 8pt !important;
     padding-left: 2px !important;
   }
