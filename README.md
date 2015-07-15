@@ -1,4 +1,4 @@
-![screenshot](https://raw.githubusercontent.com/commit-sudoku/zairyou/gh-pages/threads.png)
+![screenshot](https://raw.githubusercontent.com/commit-sudoku/zairyou/master/screenshot.png)
 
 材料 - ZAIRYŌ
 -----------
