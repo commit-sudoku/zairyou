@@ -332,7 +332,7 @@
   /*   min-width: 100% !important; */
     margin-top: 16px !important;
     margin-bottom: 16px !important;
-    padding: 16px !important;
+    padding: 0px !important;
     border-radius: 5px !important;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   }
@@ -378,6 +378,7 @@
     border-right: none !important;
     border-bottom: none !important;
     width: 99.5% !important;
+    padding: 16px !important;
   }
 
   #qp {
@@ -1438,7 +1439,7 @@
     
       Hide threads / posts - WIP
     
-  */
+  
 
   .stub span,
   .sideArrows,
@@ -1447,7 +1448,7 @@
     font-size: 0 !important;
   }
 
-  .postContainer .stub:first-of-type,
+   .postContainer .stub:first-of-type,
   .postContainer .stub {
     margin-top:0px!important;
   }
@@ -1460,22 +1461,22 @@
     border-radius: 5px !important;
     min-height: 20px !important;
     max-height: 20px !important;
-  }
+  } 
 
-  .stub:first-of-type {
+   .stub:first-of-type {
     margin-top: 25px !important;
-  }
+  } 
 
-  .hide-reply-button {
+   .hide-reply-button {
     position: relative !important;
     float: right !important;
     margin-top: 2px !important;
     margin-right: 8px !important;
     z-index: 1;
     font-size: 0 !important;
-  }
+  } 
 
-  .hide-thread-button {
+   .hide-thread-button {
     position: absolute !important;
     float: right !important;
     top: 2px !important;
@@ -1522,8 +1523,15 @@
 
   .stub > a:hover {
     color: #666 !important;
+  } */
+  
+  
+  .sideArrows,
+  .hide-thread-button,
+  .hide-reply-button {
+   display: none !important; 
   }
-
+  
   /*
     
       UPDATER
