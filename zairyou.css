@@ -42,8 +42,8 @@
   .boardBanner > img,
   .boardTitle,
   .boardSubtitle,
-  .extButton,
   .deleteform,
+  .extButton,
   .boardBanner,
   .hide-reply-button.stub a::before,
   .postForm,
@@ -343,6 +343,7 @@
     
   .post.op {
     margin-top: -3px !important;
+    padding: 10px 16px 16px 16px !important;
   /*   height: 100px !important; */
   }
 
@@ -468,7 +469,7 @@
 
   .fileText {
     font-size: 0px !important;
-    margin-left: 8px !important;
+    margin-left: 0px !important;
   }
   .fileText:hover {
     margin-left: 8px !important;
@@ -489,7 +490,8 @@
     margin-right: -5px !important;
     margin-left: -14px !important;
     margin-top: 4px !important;
-    color: pink!important;
+    color: #fff !important;
+    border-radius: 0px !important;
   }
 
   .fileDeleted {
