@@ -34,6 +34,7 @@
   #thread-watcher .refresh,
   #thread-watcher .fa.fa-times,
   #qr select,
+  #qr.dialog.reply-to-thread.has-captcha.captcha-v2.autohide,
   .cataloglink a[href*="archive"],
   .postInfo input[type="checkbox"],
   .inline .menu-button,
@@ -128,7 +129,7 @@
     background: #f5f5f5 !important;
     font-size: 12pt !important;
     position: fixed !important;
-    padding: 4px 0 6px 0 !important;
+    padding: 9px 0 9px 0 !important;
     top: 64px !important;
     left: 0 !important;
   }
@@ -187,7 +188,8 @@
   a.show-board-list-button::after,
   .show-board-list-button::after,
   .show-board-list-button::after {
-    content: "+++++++++++++++++++++++++++++++++++" !important;
+    content: "++++++++++++++++++++++++++++++" !important;
+    height: 50px !important;
   }
     
   .autohide body {
@@ -213,7 +215,7 @@
     display: inline !important;
     white-space: normal !important;
     position: relative !important;
-    top: 32px !important;
+    top: 41px !important;
     left: 106px !important;
   }
 
@@ -344,7 +346,7 @@
   .post.op {
     margin-top: -3px !important;
     padding: 10px 16px 16px 16px !important;
-  /*   height: 100px !important; */
+    width: calc(100% - 32px) !important;
   }
 
   .expanded-image,
@@ -378,7 +380,7 @@
     background: transparent !important;
     border-right: none !important;
     border-bottom: none !important;
-    width: 99.5% !important;
+    width: calc(100% - 32px) !important;
     padding: 16px !important;
   }
 
@@ -592,8 +594,8 @@
     text-align: center !important;
     content: "見てのスレッド" !important;
     width: 256px !important;
-    padding: 5px 0 5px 0 !important;
-    background: #f4f5f5 !important;
+    padding: 9px 0 9px 0 !important;
+    background: #f1f1f1 !important;
     font-size: 12pt !important;
     font-weight: normal !important;
     position: absolute !important;
@@ -631,9 +633,9 @@
 
   #thread-watcher > .move {
     color: transparent !important;
-    height: 18px !important;
+    height: 40px !important;
     width: 256px !important;
-    margin-top: -35px !important;
+    margin-top: -38px !important;
     z-index: 800 !important;
     position: absolute !important;
   }
@@ -644,9 +646,9 @@
     color: transparent !important;
     content: "++++++++++++++++++++++++++++++++++++" !important;
   /*   height:20px !important; */
-    width: 105px !important;
+    width: 120px !important;
     top: 3px !important;
-    right: 10px !important;
+    left: -30px !important;
   } 
       
   #thread-watcher a.entry:nth-child(1),
@@ -791,7 +793,7 @@
   }
   
   #watched-threads {
-    margin-top: 3px !important;
+    margin-top: 12px !important;
   }
   
   #dump-button:hover,
@@ -888,10 +890,14 @@
     color: #818181 !important;
   }
     
-  /* .postNum a::before {
+  span.postNum.desktop a[title="Link to this post"] {
+    font-size: 0px !important;
+  }
+  
+  span.postNum.desktop a[title="Link to this post"]:after {
     content: "#" !important;
     font-size: 12pt !important;
-  } */
+  }
 
   .container {
     display: inline !important;
@@ -933,14 +939,14 @@
   }
       
   .backlink:after {
-    content: url('http://i.imgur.com/ruSV1ja.png') !important;
+    content: url('http://i.imgur.com/oVkaCil.png') !important;
     font-size: 9pt !important;
     margin-right: 4px !important;
   }
 
   .backlink:hover::after,
   .backlink.inlined::after {
-    content: url('http://i.imgur.com/Lcv8D6F.png') !important;
+    content: url('http://i.imgur.com/7MSRcFF.png') !important;
   }
 
   .highlight-own:root .yourPost > .post.reply {
@@ -964,8 +970,8 @@
   .reply.post:target,
   .post.reply.qphl,
   .post.op.qphl {
-    box-shadow: 0 0 0 1px rgba(173, 69, 65, .5)!important;
-    outline: none !important;
+    outline: 1px solid rgba(173, 69, 65, .5) !important;
+    -moz-outline-radius: 5px !important;
   }
 
   .fileText,
