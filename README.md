@@ -40,12 +40,10 @@ CTRL + F '#3F51B5' and replace it with a hexdecimal color of your choice to chan
 
 TODO LIST
 -------------------------------
-* fix post highlight going too far right 
 * find way to add in file info
 * use flex boxes to reorder posts elements
 * maybe add icons
 * maybe make drawer hover over posts
-* add bigger backlink icons
 
 [1]: https://github.com/ccd0/4chan-x
 [2]: https://github.com/mudanaku/
