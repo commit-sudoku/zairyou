@@ -538,6 +538,7 @@
     content: "設定" !important;
     font-size: 11pt !important;
     margin-right: -8px !important;
+    z-index: 3 !important;
     
   }
     
