@@ -387,8 +387,7 @@
   #qp {
     box-shadow: none !important;
     border: none !important;
-    min-width: 335px !important;
-    padding: 0px !important;
+    min-width: 350px !important;
   }
 
   #qp .postContainer {
