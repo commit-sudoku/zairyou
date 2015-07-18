@@ -38,13 +38,6 @@ CTRL + F 'http://i.imgur.com/2Uw0eQQ.png' and replace it with a path to your own
 
 CTRL + F '#3F51B5' and replace it with a hexdecimal color of your choice to change the accent color. 
 
-TODO LIST
--------------------------------
-* find way to add in file info
-* use flex boxes to reorder posts elements
-* maybe add icons
-* maybe make drawer hover over posts
-
 [1]: https://github.com/ccd0/4chan-x
 [2]: https://github.com/mudanaku/
 [3]: https://raw.githubusercontent.com/commit-sudoku/zairyou/gh-pages/boardshelp.png
