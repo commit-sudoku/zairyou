@@ -458,7 +458,7 @@
     opacity: 0.5 !important;
   }
 
-  .postInfo.op {
+  .op .postInfo {
     top: -2px !important;
     width: auto !important;
     display: block !important;
@@ -471,21 +471,26 @@
   }
 
   .fileText {
-    font-size: 0px !important;
-    margin-left: 0px !important;
-  }
-  .fileText:hover {
-    margin-left: 8px !important;
+    font-size: 12px !important;
+    margin-left: 6px !important;
+    margin-top: 2px !important;
+    margin-bottom: -2px !important; 
   }
 
   .op .fileText {
-    padding-top: 5px !important;
-    margin-left: 10px !important;
+    padding-bottom: 1px !important;
+    margin-left: 5px !important;
+  }
+  
+  .fileText,
+  .file a {
+    color: #828282 !important;
+    text-decoration: none !important;
   }
 
   .postMessage {
     margin-left: 5px !important;
-    margin-top: 4px !important;
+    margin-top: 6px !important;
     margin-bottom: 0px !important;
   }
     
@@ -812,11 +817,11 @@
   .postMessage .linkify:hover,
   .embedder:hover,
     
-  /* .fileText a:hover, */
+  .fileText a:hover,
   .summary:hover,
   #thread-watcher a:hover,
   #board-list a:hover {
-    color: #5f5f65 !important;
+    color: #3F51B5 !important;
   }
 
   .hand:hover,
@@ -974,13 +979,6 @@
   .post.op.qphl {
     outline: 1px solid rgba(173, 69, 65, .5) !important;
     -moz-outline-radius: 5px !important;
-  }
-
-  .fileText,
-  .file a {
-    color: #828282 !important;
-    text-decoration: none !important;
-    font-style: italic !important;
   }
 
   .quote {
