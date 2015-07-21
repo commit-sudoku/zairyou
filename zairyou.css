@@ -156,7 +156,7 @@
   }
   #shortcuts {
     position: fixed !important;
-    top: 5000px !important;
+    top: 5000000px !important;
   }
 
   #board-list a {
@@ -305,7 +305,7 @@
     display:inline!important;
     position:fixed!important;
     font-size: 0 !important;
-    top:5000px!important;
+    top:5000000px!important;
   }
 
   #boardNavDesktopFoot .current::after {
@@ -395,6 +395,7 @@
     box-shadow: none !important;
     border: none !important;
     min-width: 350px !important;
+    max-width: 850px !important;
   }
 
   #qp .postContainer {
@@ -456,7 +457,7 @@
     position: relative !important;
     margin-right: -5px !important;
     top: 2px !important;
-    left: -9px !important;
+    left: -3px !important;
     width: 17px !important;
   }
 
@@ -465,7 +466,7 @@
   }
 
   .op .postInfo {
-    top: -2px !important;
+    padding-top: 1px !important;
     width: auto !important;
     display: block !important;
   }
@@ -507,7 +508,14 @@
     color: #fff !important;
     border-radius: 0px !important;
   }
-
+  
+  .expanded-image > .post > .file > .fileThumb > .full-image {
+    display: inline !important;
+    margin-left: -14px !important;
+    margin-right: 0px !important;
+    margin-top: 4px !important;
+  }
+    
   .fileDeleted {
     padding-left:17px!important;
   }
@@ -840,7 +848,7 @@
 
   .postertrip {
     font-size: 12pt !important;
-    color: #5f5f65 !important;
+    color: #727272 !important;
   }
     
   .ip-counter{
@@ -852,6 +860,7 @@
     font-size: 12pt !important;
     font-weight: bold !important;
     color: #000000 !important;
+    opacity: 0.87 !important;
   }
 
   .useremail {
@@ -892,7 +901,7 @@
     font-size: 12pt !important;
     padding-left: 4px !important;
     padding-right: 4px !important;
-    color: #a5a5a5 !important;
+    color: #a8a8a8 !important;
   }
     
   .pages a,
@@ -902,7 +911,7 @@
 
   .postNum a {
     font-size: 12pt !important;
-    color: #818181 !important;
+    color: #727272 !important;
   }
     
   span.postNum.desktop a[title="Link to this post"] {
@@ -923,7 +932,7 @@
   .backlink,
   .inline .backlink,
   a.quotelink {
-    color: #999 !important;
+    color: #a8a8a8 !important;
   }
 
   .quotelink.inlined,
@@ -990,14 +999,16 @@
   }
 
   .quote {
-    color: #093 !important;
+    color: #4CAF50 !important;
   }
 
   .subject {
-    color: #ababab !important;
+    color: #a8a8a8 !important;
     font-size: 12pt !important;
     font-weight: normal !important;
     padding-right: 5px !important;
+    margin-left: 4px !important;
+    padding-top: 3px !important;
   }
 
   .quote a,
@@ -1024,17 +1035,9 @@
   .linkify,
   .globalMessage a,
   .fileThumb > img:first-child {
-    color: #999!important;
+    color: #a8a8a8 !important;
   }
-
-  #fourchanx-settings.dialog a {
-    color: #49637d !important;
-  }
-
-  #fourchanx-settings.dialog a:hover {
-    color: #2f4052 !important;
-  }
-
+  
   /*
     
       Page Links
@@ -1109,7 +1112,7 @@
 
   .dialog {
     background: none !important;
-    color: #2e3033 !important;
+    color: #212121 !important;
     border: transparent !important;
   }
 
@@ -1132,6 +1135,19 @@
     display: block;
   }
 
+  #fourchanx-settings.dialog a {
+    color: #212121 !important;
+  }
+
+  #fourchanx-settings.dialog a:hover {
+    color: #fff !important;
+  }
+  
+  .yotsuba-b:root #fourchanx-settings fieldset, .yotsuba-b:root .section-main div::before {
+    border-color: #B6B6B6 !important;
+  }
+  
+  
   /*
     
     QUICK REPLY
@@ -1447,7 +1463,7 @@
 
   .entry:hover,
   .entry a:hover {
-    color: #000 !important;
+    color: #000000 !important;
   }
 
 
