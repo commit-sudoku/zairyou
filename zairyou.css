@@ -93,8 +93,8 @@
     background-color: #3F51B5 !important;
     background-size: cover !important;
     background-position: 50% 50% !important;
-    /* background-image: url('http://i.imgur.com/YXVTjQ4.png') !important; */ /* pink tokyo bg */
-    background-image: url('http://i.imgur.com/2Uw0eQQ.png') !important; /* purple melborne bg */
+    background-image: url('http://i.imgur.com/YXVTjQ4.png') !important; /* pink tokyo bg */
+    /* background-image: url('http://i.imgur.com/2Uw0eQQ.png') !important; purple melborne bg */
     /* background-image: url('http://i.imgur.com/xCq5ERi.png') !important; */ /* tokyo night bg */
     position: fixed !important;
     top: 0px !important;
@@ -338,7 +338,6 @@
   .postContainer {
     position: relative !important;
     background-color: #fff !important;
-  /*   min-width: 100% !important; */
     margin-top: 16px !important;
     margin-bottom: 16px !important;
     padding: 0px !important;
@@ -394,7 +393,7 @@
   #qp {
     box-shadow: none !important;
     border: none !important;
-    min-width: 350px !important;
+    min-width: 500px !important;
     max-width: 850px !important;
   }
 
@@ -518,6 +517,11 @@
     
   .fileDeleted {
     padding-left:17px!important;
+  }
+  
+  .fileDeletedRes {
+    padding-top: 8px !important;
+    padding-left: 17px !important;
   }
 
   #index-search {
@@ -1413,7 +1417,7 @@
   .postContainer .menu-button {
     float: right !important;
     margin-right: 8px !important;
-    margin-top: 5px !important;
+/*     margin-top: 5px !important; */
     font-size: 0 !important;
   }
 
@@ -1486,16 +1490,6 @@
     margin-top:0px!important;
   }
 
-  .stub {
-    padding: 0 0 0 0 !important;
-    margin-top:24px!important;
-    width: 100% !important;
-    background: #e5e5e5 !important;
-    border-radius: 5px !important;
-    min-height: 20px !important;
-    max-height: 20px !important;
-  } 
-
    .stub:first-of-type {
     margin-top: 25px !important;
   } 
@@ -1559,6 +1553,29 @@
   } */
   
   
+  .stub {
+    padding: 16px !important;
+  } 
+  
+  .show-reply-button {
+    font-size: 12pt !important;
+    font-weight: 800 !important;
+    margin-left: 6px !important;
+  }
+  
+  .show-reply-button:after {
+    font-size: 12pt !important;
+    font-weight: 400 !important;
+    margin-left: 8px !important;
+    color: #a8a8a8 !important;
+    content: "post has been hidden" !important;
+  }
+  
+  
+  .fa-plus-square-o::before {
+    display: none !important;
+  }
+   
   .sideArrows,
   .hide-thread-button,
   .hide-reply-button {
@@ -1616,15 +1633,78 @@
   #update-status:not(.empty) + #update-timer:not(.empty):not(.loading) {
     margin-left: 0px !important;
   }
+
+  /*  
+  
+      DUBS 
+      TRIPS 
+      QUADS 
+      QUINTS 
+      SEXTS 
+      SEPTS 
+      OCTS 
+      NONS
+  
+  */
+  
+  .postNum a[href$="00');"]:after, .postNum a[href$="11');"]:after, .postNum a[href$="22');"]:after, .postNum a[href$="33');"]:after, .postNum a[href$="44');"]:after,
+  .postNum a[href$="55');"]:after, .postNum a[href$="66');"]:after, .postNum a[href$="77');"]:after, .postNum a[href$="88');"]:after, .postNum a[href$="99');"]:after {
+   content: " ✔" !important;
+   color: #4caf50 !important;
+   font-weight: bold !important;
+   font-size: 14px !important;
+   position: relative !important;
+   top: -1px !important;
+  }
+  
+  .postNum a[href$="000');"]:after, .postNum a[href$="111');"]:after, .postNum a[href$="222');"]:after, .postNum a[href$="333');"]:after, .postNum a[href$="444');"]:after, 
+  .postNum a[href$="555');"]:after, .postNum a[href$="666');"]:after, .postNum a[href$="777');"]:after, .postNum a[href$="888');"]:after, .postNum a[href$="999');"]:after {
+   content: " ✔✔✔" !important;
+   color: #ff9800 !important;
+  }
+  
+  .postNum a[href$="0000');"]:after, .postNum a[href$="1111');"]:after, .postNum a[href$="2222');"]:after, .postNum a[href$="3333');"]:after, .postNum a[href$="4444');"]:after, 
+  .postNum a[href$="5555');"]:after, .postNum a[href$="6666');"]:after, .postNum a[href$="7777');"]:after, .postNum a[href$="8888');"]:after, .postNum a[href$="9999');"]:after {
+   content: " ✔✔✔✔" !important;
+   color: #f44336 !important;
+  }
+  
+  .postNum a[href$="00000');"]:after, .postNum a[href$="11111');"]:after, .postNum a[href$="22222');"]:after, .postNum a[href$="33333');"]:after,  .postNum a[href$="44444');"]:after,
+  .postNum a[href$="55555');"]:after, .postNum a[href$="66666');"]:after, .postNum a[href$="77777');"]:after, .postNum a[href$="88888');"]:after, .postNum a[href$="99999');"]:after {
+   content: " ✔✔✔✔✔" !important;
+   color: #e040fb !important;
+  }
+  
+  .postNum a[href$="000000');"]:after, .postNum a[href$="111111');"]:after, .postNum a[href$="222222');"]:after, .postNum a[href$="333333');"]:after, .postNum a[href$="444444');"]:after,
+  .postNum a[href$="555555');"]:after, .postNum a[href$="666666');"]:after, .postNum a[href$="777777');"]:after, .postNum a[href$="888888');"]:after, .postNum a[href$="999999');"]:after {
+   content: " ✔✔✔✔✔✔" !important;
+   color: #651fff !important;
+  }
+  
+  .postNum a[href$="0000000');"]:after, .postNum a[href$="1111111');"]:after, .postNum a[href$="2222222');"]:after, .postNum a[href$="3333333');"]:after, .postNum a[href$="4444444');"]:after, 
+  .postNum a[href$="5555555');"]:after, .postNum a[href$="6666666');"]:after, .postNum a[href$="7777777');"]:after, .postNum a[href$="8888888');"]:after, .postNum a[href$="9999999');"]:after {
+   content: " ✔✔✔✔✔✔✔" !important;
+   color: #304ffe !important;
+  }
+  
+  .postNum a[href$="00000000');"]:after, .postNum a[href$="11111111');"]:after, .postNum a[href$="22222222');"]:after, .postNum a[href$="33333333');"]:after, .postNum a[href$="44444444');"]:after, 
+  .postNum a[href$="55555555');"]:after, .postNum a[href$="66666666');"]:after, .postNum a[href$="77777777');"]:after, .postNum a[href$="88888888');"]:after, .postNum a[href$="99999999');"]:after {
+   content: " ✔✔✔✔✔✔✔✔" !important;
+   color: #2196f3 !important;
+  }
+  
+  .postNum a[href$="000000000');"]:after, .postNum a[href$="111111111');"]:after, .postNum a[href$="222222222');"]:after, .postNum a[href$="333333333');"]:after, .postNum a[href$="444444444');"]:after,
+  .postNum a[href$="555555555');"]:after, .postNum a[href$="666666666');"]:after, .postNum a[href$="777777777');"]:after, .postNum a[href$="888888888');"]:after, .postNum a[href$="999999999');"]:after {
+   content: " ✔✔✔✔✔✔✔✔✔" !important;
+   color: #000000 !important;
+  }
 }
 
-/*
 
-CATALOG
 
-*/
 
-@-moz-document regexp("https?://boards\\.4chan\\.org\\/(.|..|...|....)\\/catalog") {
+
+@-moz-document regexp("https?://boards\\.4chan\\.org\\/(.|..|...|....)\\/catalog") { /*  CATALOG  */
   #globalToggle,
   #first-run,
   #globalMessage,
@@ -1696,13 +1776,11 @@ CATALOG
   }
 }
 
-/*
 
-    RECAPTCHA
-  
-*/
 
-@-moz-document regexp("https?://.*.(google.com/recaptcha/api2).*") {
+
+
+@-moz-document regexp("https?://.*.(google.com/recaptcha/api2).*") { /*    RECAPTCHA    */
   
   *:not([class*="recaptcha-checkbox"]) {
     color: #3F51B5 !important; 
