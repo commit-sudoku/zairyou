@@ -45,3 +45,7 @@ CTRL + F '#3F51B5' and replace it with a hexdecimal color of your choice to chan
 [5]: http://i.imgur.com/x970AkQ.png
 [6]: https://addons.mozilla.org/en-us/firefox/addon/stylish/
 [7]: https://github.com/adobe-fonts/source-han-sans/tree/release
+
+![dubs](https://raw.githubusercontent.com/commit-sudoku/zairyou/master/dubs.png)
+
+This style also comes with the added feature of checking dubs. When someone's post number ends in repeating intergers, a checkmark will be added behind it to notify you of this. If this funcionality bothers you, it can be disabled by commenting out all lines from 1670 to 1720.
