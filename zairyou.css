@@ -93,8 +93,8 @@
     background-color: #3F51B5 !important;
     background-size: cover !important;
     background-position: 50% 50% !important;
-    background-image: url('http://i.imgur.com/YXVTjQ4.png') !important; /* pink tokyo bg */
-    /* background-image: url('http://i.imgur.com/2Uw0eQQ.png') !important; purple melborne bg */
+    /* background-image: url('http://i.imgur.com/YXVTjQ4.png') !important; */ /* pink tokyo bg */
+    background-image: url('http://i.imgur.com/2Uw0eQQ.png') !important; /* purple melborne bg */
     /* background-image: url('http://i.imgur.com/xCq5ERi.png') !important; */ /* tokyo night bg */
     position: fixed !important;
     top: 0px !important;
@@ -239,6 +239,9 @@
     margin:0!important;
     margin-right:-50px!important;
     display: inline !important;
+    font-weight: normal !important;
+    color: #aaa !important;
+    font-size: 12px !important;
   }
     
   #full-board-list {
@@ -560,12 +563,13 @@
     font-family: "Roboto", "Source Han Sans JP Regular", "Meiryo" !important;
     content: "設定" !important;
     font-size: 11pt !important;
-    margin-right: -8px !important;
+    margin-right: 43px !important;
     z-index: 3 !important;
     
   }
     
   #menu.dialog:not(.left) {
+    font-size: 12pt !important;
     background: white !important;
     position: fixed !important;
     right: 8px !important;
@@ -582,9 +586,10 @@
   }
     
   #menu.dialog:not(.left) .submenu {
-    background: white !important;
-    width: 200px !important;
-    right: 208px !important;
+    font-size: 12pt !important;
+    min-width: 200px !important;
+    background-color: #fff !important;
+    margin-right: 10px !important;
     border:4px solid #ffffff !important;
     border-radius:5px!important;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12) !important;
@@ -798,18 +803,21 @@
     color: #ffffff !important;
   }
 
-  #thread-watcher,
+/*   #thread-watcher,
   #thread-watcher a,
   #header-bar a {
     color: #aaa !important;
     font-weight: normal !important;
     font-size: 14px !important;
-  }
+  } */
 
   #custom-board-list a {
    padding-top: 3px !important; 
    padding-bottom: 2px !important; 
    display: block !important;
+   font-weight: normal !important;
+   color: #aaa !important;
+   font-size: 14px !important;
   }
   
   .watcher-title,
@@ -817,6 +825,9 @@
    padding-top: 1px !important; 
    padding-bottom: 0px !important; 
    display: block !important;
+   font-weight: normal !important;
+   color: #aaa !important;
+   font-size: 14px !important;
   }
   
   #watched-threads {
