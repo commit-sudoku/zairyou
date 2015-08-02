@@ -708,8 +708,14 @@
   }
 
   .closed {
-    padding-top:20px!important;
-    padding-bottom:20px!important;
+    margin-top: 59px !important;
+    margin-bottom: -63px !important;
+    margin-left: 100px !important;
+    padding-top:0px!important;
+    padding-bottom:0px!important;
+    font-size: 12pt !important;
+    font-weight: 300 !important;
+    color: #f44336 !important;
   }
 
   #unread-line {
@@ -864,6 +870,10 @@
   .postertrip {
     font-size: 12pt !important;
     color: #727272 !important;
+  }
+  
+  .capcode {
+    font-size: 12pt !important;
   }
     
   .ip-counter{
