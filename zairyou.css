@@ -149,11 +149,51 @@
 
   #notifications {
     position: fixed !important;
-    top: 72px !important;
-    left: 50px !important;
+    top: 71px !important;
+    right: 40px !important;
+    left: auto !important;
     height: auto !important;
-    width: auto !important;
+    width: 200px !important;
+    float: right !important;
   }
+  
+  .notification.warning {
+    background-color: #fff !important;
+    padding: 16px !important;
+    width: 200px !important;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .notification.info {
+    background-color: #fff !important;
+    padding: 16px !important;
+    width: 200px !important;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .notification.warning .message, .notification.info .message {
+    position: relative !important;
+    font-size: 12pt !important;
+    width: 200px !important;
+    text-shadow: none !important;
+  }
+  
+  .notification.info .message {
+    color: #000 !important;
+    font-weight: 400 !important;
+  }
+  
+  #notifications .close.fa.fa-times {
+    color: #000 !important;
+    box-shadow: none !important;
+    width: 220px !important;
+    height: 70px !important;
+    opacity: 0 !important;
+    z-index: 10 !important;
+  }
+  
   #shortcuts {
     position: fixed !important;
     top: 5000000px !important;
