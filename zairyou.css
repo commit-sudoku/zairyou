@@ -105,10 +105,10 @@
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important;
   }
 
-  div.post div.postInfo span.postNum a:hover, .posteruid .hand:hover {
+  div.post div.postInfo span.postNum a:hover {
       color: #3F51B5 !important;
   }
-    
+  
   #shortcuts::after {            /*   this is the white part of the sidebar   */   
     content: "" !important;
     position: fixed !important;
@@ -498,6 +498,7 @@
     opacity: 0.5 !important;
   }
 
+   
   .op .postInfo {
     padding-top: 1px !important;
     width: auto !important;
@@ -873,8 +874,6 @@
   
   #dump-button:hover,
   .globalMessage a:hover,
-  .hand,
-  .posteruid,
   .abbr a:hover,
   .pages a:hover,
   .pages strong a,
@@ -890,12 +889,6 @@
   #thread-watcher a:hover,
   #board-list a:hover {
     color: #3F51B5 !important;
-  }
-
-  .hand:hover,
-  .posteruid:hover,
-  .posteruid:hover .hand{
-    color: #434347 !important;
   }
 
   .postertrip {
@@ -969,6 +962,21 @@
   .postNum a {
     font-size: 12pt !important;
     color: #727272 !important;
+  }
+  
+  .posteruid {
+    font-size: 0px !important;
+    
+  }
+  
+  .hand.painted {
+    font-size: 12pt !important;
+    padding: 0px 4px 0px 4px !important;
+  }
+  
+  .hand.painted:hover {
+    background-color: #3F51B5 !important;
+    color: #fff !important;
   }
     
   span.postNum.desktop a[title="Link to this post"] {
