@@ -625,7 +625,7 @@
     
   #menu.dialog:not(.left) .submenu {
     font-size: 12pt !important;
-    min-width: auto !important;
+    min-width: 184px !important;
     background-color: #fff !important;
     margin-right: 10px !important;
     border:4px solid #ffffff !important;
