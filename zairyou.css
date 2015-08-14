@@ -599,17 +599,12 @@
     z-index: 3 !important;
     
   }
-    
+  
   #menu.dialog:not(.left) {
     font-size: 12pt !important;
     background: white !important;
-    position: fixed !important;
-    right: 8px !important;
-    top: 72px !important;
-    left: auto !important;
-    bottom: auto !important;
     transition: 0.5s color ease;
-    width: 192px !important;
+    min-width: 140px !important;
     height: auto !important;
     z-index: 100 !important;
     border:4px solid #ffffff!important;
@@ -617,9 +612,20 @@
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12) !important;
   }
     
+  .shortcut.brackets-wrap .menu-button.active #menu.dialog:not(.left), #thread-watcher.dialog .move .menu-button.active #menu.dialog:not(.left) {
+    right: 8px !important;
+    top: 72px !important;
+    left: auto !important;
+    bottom: auto !important;
+  }
+  
+  .shortcut.brackets-wrap .menu-button.active #menu.dialog:not(.left), #thread-watcher.dialog .move .menu-button.active #menu.dialog .entry.has-submenu.focused .dialog.submenu {
+   width: 184px !important;
+  }
+    
   #menu.dialog:not(.left) .submenu {
     font-size: 12pt !important;
-    min-width: 200px !important;
+    min-width: auto !important;
     background-color: #fff !important;
     margin-right: 10px !important;
     border:4px solid #ffffff !important;
@@ -629,6 +635,14 @@
 
   #header-bar .menu-button::after {
     content: none !important;
+  }
+  
+  .has-submenu::after {
+    display: none !important;
+  }
+  
+  .entry input[type="checkbox"], .entry input[type="radio"] {
+    float: right !important;
   }
 
   #header-bar .menu-button i {
@@ -722,7 +736,7 @@
     opacity: 1 !important;
     left: 3px !important;
     top: 2px !important;
-    width: 170px !important;
+    width: 140px !important;
   }
       
   #thread-watcher span.entry {
@@ -734,7 +748,8 @@
   }
 
   #thread-watcher label {
-    width: 115px !important;
+    background-color: transparent !important;
+    max-width: 170px !important;
     margin-right: -15px !important;
     height: 18px !important;
   }
