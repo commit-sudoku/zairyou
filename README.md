@@ -48,4 +48,4 @@ Go to line 112 and replace 'https://raw.githubusercontent.com/commit-sudoku/zair
 
 ![dubs](https://raw.githubusercontent.com/commit-sudoku/zairyou/master/dubs.png)
 
-This style also comes with the added feature of checking dubs. When someone's post number ends in repeating intergers, a checkmark will be added behind it to notify you of this. If this funcionality bothers you, it can be disabled by commenting out all lines from 1736 to 1786.
+This style also comes with the added feature of checking dubs. When someone's post number ends in repeating intergers, a checkmark will be added behind it to notify you of this. If this funcionality bothers you, it can be disabled by commenting out all lines from 1748 to 1798.
