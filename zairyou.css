@@ -1,4 +1,4 @@
-﻿/* 
+/* 
   
   材料 - ZAIRYOU
 
@@ -9,14 +9,23 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic');
 @namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("boards.4chan.org"), regexp("https?://boards\\.4chan\\.org\\/(.|..|...|....)\\/catalog"), regexp("https?://.*.(google.com/recaptcha/api2).*") {
+  :root {
+    --accent-color: #cb073c;  /*   replace this to change accent color */
+  }
+} 
+   
 @-moz-document domain("boards.4chan.org") {
+  
+  
   
   /*
     
       MAIN LAYOUT
 
   */
-
+  
   div.center,
   h1,
   hr,
@@ -90,12 +99,18 @@
    #board-list::before {           /*   this is the header bar at the top   */             
     display: inline !important;
     content: "" !important;
-    background-color: #3F51B5 !important;
+    background-color: var(--accent-color) !important;
     background-size: cover !important;
     background-position: 50% 50% !important;
-    /* background-image: url('http://i.imgur.com/YXVTjQ4.png') !important; */ /* pink tokyo bg */
-    background-image: url('http://i.imgur.com/2Uw0eQQ.png') !important; /* purple melborne bg */
-    /* background-image: url('http://i.imgur.com/xCq5ERi.png') !important; */ /* tokyo night bg */
+    
+/*     background-image: url('https://raw.githubusercontent.com/commit-sudoku/zairyou/master/res/bg/1.png') !important; */
+/*     background-image: url('https://raw.githubusercontent.com/commit-sudoku/zairyou/master/res/bg/2.png') !important; */
+/*     background-image: url('https://raw.githubusercontent.com/commit-sudoku/zairyou/master/res/bg/3.png') !important; */
+/*     background-image: url('https://raw.githubusercontent.com/commit-sudoku/zairyou/master/res/bg/4.png') !important; */
+/*     background-image: url('https://raw.githubusercontent.com/commit-sudoku/zairyou/master/res/bg/5.png') !important; */
+/*     background-image: url('https://raw.githubusercontent.com/commit-sudoku/zairyou/master/res/bg/6.png') !important; */
+    background-image: url('https://raw.githubusercontent.com/commit-sudoku/zairyou/master/res/bg/7.png') !important;
+    
     position: fixed !important;
     top: 0px !important;
     left: 0px !important;
@@ -106,7 +121,7 @@
   }
 
   div.post div.postInfo span.postNum a:hover {
-      color: #3F51B5 !important;
+      color: var(--accent-color) !important;
   }
   
   #shortcuts::after {            /*   this is the white part of the sidebar   */   
@@ -471,7 +486,7 @@
   }
     
   a:hover {
-    color: #3F51B5 !important;
+    color: var(--accent-color) !important;
   }
     
   .op {
@@ -777,7 +792,7 @@
     padding-bottom:1px!important;
     border-top: 1px solid !important;
     height:1px !important;
-    border-color:#3F51B5!important;
+    border-color:var(--accent-color)!important;
   }
 
   /*
@@ -859,14 +874,6 @@
     color: #ffffff !important;
   }
 
-/*   #thread-watcher,
-  #thread-watcher a,
-  #header-bar a {
-    color: #aaa !important;
-    font-weight: normal !important;
-    font-size: 14px !important;
-  } */
-
   #custom-board-list a {
    padding-top: 3px !important; 
    padding-bottom: 2px !important; 
@@ -901,12 +908,13 @@
   .inline .backlink:hover,
   .postMessage .linkify:hover,
   .embedder:hover,
-    
+  .watcher-title:hover,
+  .watcher-unread:hover,
   .fileText a:hover,
   .summary:hover,
   #thread-watcher a:hover,
   #board-list a:hover {
-    color: #3F51B5 !important;
+    color: var(--accent-color) !important;
   }
 
   .postertrip {
@@ -993,7 +1001,7 @@
   }
   
   .hand.painted:hover {
-    background-color: #3F51B5 !important;
+    background-color: var(--accent-color) !important;
     color: #fff !important;
   }
     
@@ -1046,14 +1054,14 @@
   }
       
   .backlink:after {
-    content: url('http://i.imgur.com/oVkaCil.png') !important;
+    content: url('https://raw.githubusercontent.com/commit-sudoku/zairyou/master/res/img/backlink.png') !important;
     font-size: 9pt !important;
     margin-right: 4px !important;
   }
 
   .backlink:hover::after,
   .backlink.inlined::after {
-    content: url('http://i.imgur.com/7MSRcFF.png') !important;
+    content: url('https://raw.githubusercontent.com/commit-sudoku/zairyou/master/res/img/backlink_hover.png') !important;
   }
 
   .highlight-own:root .yourPost > .post.reply {
@@ -1316,7 +1324,7 @@
   input:focus:not([type]), 
   textarea:focus{
     box-shadow: none !important;
-    border-color: #3F51B5 !important;
+    border-color: var(--accent-color) !important;
   }
 
   input:-moz-placeholder,
@@ -1914,7 +1922,7 @@
 @-moz-document regexp("https?://.*.(google.com/recaptcha/api2).*") { /*    RECAPTCHA    */
   
   *:not([class*="recaptcha-checkbox"]) {
-    color: #3F51B5 !important; 
+    color: var(--accent-color) !important; 
     background: #fff !important;
     border-color: #fff !important;
     border-radius: 0 !important;
