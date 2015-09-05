@@ -34,9 +34,9 @@ Installation
 Customization
 -------------------------------
 
-CTRL + F 'http://i.imgur.com/2Uw0eQQ.png' and replace it with a path to your own 1920x64 header image or use the ones I left commented.
+Go to line 15 and replace #cb073c with another hexdecimal color to change the accent color. 
 
-CTRL + F '#3F51B5' and replace it with a hexdecimal color of your choice to change the accent color. 
+Go to line 112 and replace 'https://raw.githubusercontent.com/commit-sudoku/zairyou/master/res/bg/7.png' with a path to your own 1920x64 header image or use the ones I left commented.
 
 [1]: https://github.com/ccd0/4chan-x
 [2]: https://github.com/mudanaku/
@@ -48,4 +48,4 @@ CTRL + F '#3F51B5' and replace it with a hexdecimal color of your choice to chan
 
 ![dubs](https://raw.githubusercontent.com/commit-sudoku/zairyou/master/dubs.png)
 
-This style also comes with the added feature of checking dubs. When someone's post number ends in repeating intergers, a checkmark will be added behind it to notify you of this. If this funcionality bothers you, it can be disabled by commenting out all lines from 1670 to 1720.
+This style also comes with the added feature of checking dubs. When someone's post number ends in repeating intergers, a checkmark will be added behind it to notify you of this. If this funcionality bothers you, it can be disabled by commenting out all lines from 1736 to 1786.
