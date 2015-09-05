@@ -1333,6 +1333,7 @@
   }
 
   #qr-filename-container {
+    font-family: "Roboto", "Source Han Sans JP Regular", "Meiryo" !important;
     box-shadow: none !important;
     border: none !important;
     margin-top: 2px !important;
@@ -1373,11 +1374,13 @@
   }
 
   #file-n-submit input {
+    font-family: "Roboto", "Source Han Sans JP Regular", "Meiryo" !important;
     width: 25.9% !important;
     border-radius: 0px;
   }
 
   #file-n-submit.has-file input {
+    font-family: "Roboto", "Source Han Sans JP Regular", "Meiryo" !important;
     margin-left: -1.5px !important;
     width: 26.4% !important;
   }
@@ -1493,6 +1496,15 @@
   .qr-preview {
     margin-bottom: 1px !important;
   }
+  
+  #url-button, #paste-area, #dump-button {
+    color: #000 !important;
+  }
+  
+  #url-button:hover, #paste-area:hover, #dump-button:hover {
+    color: var(--accent-color) !important;
+  }
+  
 
   /*
     
