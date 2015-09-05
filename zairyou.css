@@ -1,4 +1,4 @@
-/* 
+﻿/* 
   
   材料 - ZAIRYOU
 
@@ -7,10 +7,10 @@
 
 */
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic);
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic');
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document domain("boards.4chan.org") {
-
+  
   /*
     
       MAIN LAYOUT
@@ -657,12 +657,17 @@
 
   #header-bar .menu-button i::before {
     font-style: normal !important;
+    content: "a" !important;
     position: fixed !important;
     color: #fff !important;
-    content: "⏷" !important;
-    top: 24px !important;
-    right: 26px !important;
-    font-size: 8pt !important;
+    width: 0 !important;
+    height: 0 !important;
+    border-style: solid !important;
+    border-width: 5px 4px 0 4px !important;
+    border-color: #ffffff transparent transparent !important;
+    top: 30px !important;
+    right: 27px !important;
+    font-size: 0 !important;
   }
 
   #thread-watcher::before {
