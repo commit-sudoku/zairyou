@@ -34,17 +34,17 @@ Installation
 Customization
 -------------------------------
 
-Accent Color:
+###### Accent Color:
 
   Go to line 15 and replace #cb073c with another hexdecimal color to change the accent color. 
 
 
-Header Image:
+###### Header Image:
 
-  Go to line 112 and replace 'https://raw.githubusercontent.com/commit-sudoku/zairyou/master/res/bg/7.png' with a path to your own 1920x64 header image or use the ones I left commented.
+  Go to line 115 and replace 'https://raw.githubusercontent.com/commit-sudoku/zairyou/master/res/bg/7.png' with a path to your own 1920x64 header image or use the ones I left commented.
 
 
-Board Banner:
+###### Board Banner:
 
   uncomment line 56
   
@@ -52,7 +52,7 @@ Board Banner:
 
 ![dubs](https://raw.githubusercontent.com/commit-sudoku/zairyou/master/dubs.png)
 
-This style also comes with the added feature of checking dubs. When someone's post number ends in repeating intergers, a checkmark will be added behind it to notify you of this. If this funcionality bothers you, it can be disabled by commenting out all lines from 1748 to 1798.
+This style also comes with the added feature of checking dubs. When someone's post number ends in repeating intergers, a checkmark will be added behind it to notify you of this. If this funcionality bothers you, it can be disabled by commenting out all lines from 1680 to 1730.
 
 [1]: https://github.com/ccd0/4chan-x
 [2]: https://github.com/mudanaku/
