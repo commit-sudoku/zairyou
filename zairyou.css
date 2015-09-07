@@ -18,8 +18,6 @@
    
 @-moz-document domain("boards.4chan.org") {
   
-  
-  
   /*
     
       MAIN LAYOUT
@@ -52,9 +50,14 @@
   .boardBanner > img,
   .boardTitle,
   .boardSubtitle,
+  .has-submenu::after,
   .deleteform,
   .extButton,
-  .boardBanner,
+/*   .boardBanner, */
+  .sideArrows,
+  .hide-thread-button,
+  .hide-reply-button,
+  .fa-plus-square-o::before,
   .hide-reply-button.stub a::before,
   .postForm,
   .postingMode,
@@ -138,6 +141,26 @@
     z-index: 2 !important;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important;
   }
+  
+  .boardBanner {    /*   banner */
+    width: 0px !important;
+    position: fixed !important;
+    z-index: 999 !important;
+    left: 0px !important;
+    top: 59px !important;
+  }
+  
+  #bannerCnt {
+    border: none !important;
+  }
+  
+  .top-header:not(.autohide) #bannerCnt img {
+    width: 256px !important;
+  }
+  
+  .top-header.autohide #bannerCnt img {
+    width: 0px !important;
+  }
 
   #board-list::after {
     text-align: center !important;
@@ -149,9 +172,28 @@
     font-size: 12pt !important;
     position: fixed !important;
     padding: 9px 0 9px 0 !important;
-    top: 64px !important;
+    top: 149px !important; /*     if you dont want the board banner change to 64px */
     left: 0 !important;
     z-index: 3 !important;
+  }
+  
+  a.show-board-list-button,
+  #header-bar.autohide .show-board-list-button,
+  .show-board-list-button,
+  #custom-board-list a[href="javascript:;"] {
+    opacity: 0 !important;
+    position: fixed !important;
+    top: 162px !important; /*     if you dont want the board banner change to 76px */
+    left: 0px !important;
+  }
+  
+    #custom-board-list {
+    display: inline !important;
+    white-space: normal !important;
+    position: relative !important;
+    top: 130px !important; /*     if you dont want the board banner change to 41px */
+    left: 106px !important;
+    z-index: 4 !important;
   }
 
   #header-bar {
@@ -226,16 +268,6 @@
     position: fixed !important;
     left: -500px !important;
   }
-
-  a.show-board-list-button,
-  #header-bar.autohide .show-board-list-button,
-  .show-board-list-button,
-  #custom-board-list a[href="javascript:;"] {
-    opacity: 0 !important;
-    position: fixed !important;
-    top: 76px !important;
-    left: 0px !important;
-  }
     
   a.show-board-list-button::after,
   .show-board-list-button::after,
@@ -269,15 +301,6 @@
     width: 158px !important;
     text-align: left !important;
     
-  }
-
-  #custom-board-list {
-    display: inline !important;
-    white-space: normal !important;
-    position: relative !important;
-    top: 41px !important;
-    left: 106px !important;
-    z-index: 4 !important;
   }
 
   #full-board-list a {
@@ -652,10 +675,6 @@
     content: none !important;
   }
   
-  .has-submenu::after {
-    display: none !important;
-  }
-  
   .entry input[type="checkbox"], .entry input[type="radio"] {
     float: right !important;
   }
@@ -894,7 +913,9 @@
   }
   
   #watched-threads {
-    margin-top: 12px !important;
+    padding-top: 12px !important;
+    background: #FFF none repeat scroll 0% 0%;
+    width: 253px;
   }
   
   #dump-button:hover,
@@ -1036,15 +1057,19 @@
   }
 
   .warning,
-  .deadlink,
-  .deadlink.quotelink,
   .postMessage strong {
     color: #d56b6b !important;
     font-weight: normal !important;
     font-size: 12pt !important;
     margin-right: 5px !important;
   }
-
+  
+  .backlink.deadlink:not(.forwardlink),
+  .quotelink.deadlink:not(.forwardlink) {
+    color: #D56B6B !important;
+    text-decoration: none !important;
+  }
+  
   .backlink {
     font-size: 0 !important;
   }
@@ -1568,88 +1593,6 @@
   .entry a:hover {
     color: #000000 !important;
   }
-
-
-  /*
-    
-      Hide threads / posts - WIP
-    
-  
-
-  .stub span,
-  .sideArrows,
-  .hide-reply-button.stub span {
-    color: transparent !important;
-    font-size: 0 !important;
-  }
-
-   .postContainer .stub:first-of-type,
-  .postContainer .stub {
-    margin-top:0px!important;
-  }
-
-   .stub:first-of-type {
-    margin-top: 25px !important;
-  } 
-
-   .hide-reply-button {
-    position: relative !important;
-    float: right !important;
-    margin-top: 2px !important;
-    margin-right: 8px !important;
-    z-index: 1;
-    font-size: 0 !important;
-  } 
-
-   .hide-thread-button {
-    position: absolute !important;
-    float: right !important;
-    top: 2px !important;
-    margin-right: 8px !important;
-    right: 0 !important;
-    z-index: 1;
-    font-size: 0 !important;
-  }
-
-  .hide-thread-button span::before,
-  .hide-reply-button span::before {
-    content: "-" !important;
-    font-size: 9pt !important;
-    color: #999 !important;
-    z-index: 5 !important;
-  }
-
-  .stub .menu-button,
-  .hide-reply-button.stub .menu-button {
-    font-size: 0px !important;
-    color: transparent !important;
-    font-family: "Roboto", "Source Han Sans JP Regular", "Meiryo" !important;
-    margin-top: 3px !important;
-    margin-right: 3px !important;
-  }
-
-  .stub span:not(.dropmarker)::before {
-    float: right !important;
-    margin-top: 0px !important;
-    margin-right: 7px !important;
-    content: "+" !important;
-    font-size: 9pt !important;
-    color: #999 !important;
-    font-family: "Roboto", "Source Han Sans JP Regular", "Meiryo" !important;
-  }
-   
-  .stub a {
-    margin-left: 0px !important;
-    color: #999 !important;
-    font-family: "Roboto", "Source Han Sans JP Regular", "Meiryo" !important;
-    font-size: 8pt !important;
-    padding-left: 2px !important;
-  }
-
-  .stub > a:hover {
-    color: #666 !important;
-  } */
-  
   
   .stub {
     padding: 16px !important;
@@ -1667,17 +1610,6 @@
     margin-left: 8px !important;
     color: #a8a8a8 !important;
     content: "post has been hidden" !important;
-  }
-  
-  
-  .fa-plus-square-o::before {
-    display: none !important;
-  }
-   
-  .sideArrows,
-  .hide-thread-button,
-  .hide-reply-button {
-   display: none !important; 
   }
   
   /*
@@ -1856,6 +1788,11 @@
 
 
 @-moz-document regexp("https?://boards\\.4chan\\.org\\/(.|..|...|....)\\/catalog") { /*  CATALOG  */
+  
+  * {
+    font-family: "Roboto", "Source Han Sans JP Regular", "Meiryo" !important;
+  }
+  
   #globalToggle,
   #first-run,
   #globalMessage,
@@ -1888,11 +1825,36 @@
   #content .navLinks {
     text-align: center !important;
   }
-
+  
+  .thumb {
+    box-shadow: none !important;
+  }
+  
+  .extended-small .thread {
+    background: #fff !important;
+    border-radius: 5px !important;
+    padding: 16px !important;
+    margin: 16px !important;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12) !important;
+  }
+    
+  .ctrl-wrap {
+    text-transform: uppercase !important;
+    color: #5F5F5F !important;
+    padding: 0 8px !important;
+    font-size: 12px !important;
+  }
+  
+  #teaser-ctrl, #size-ctrl, #order-ctrl {
+    border: 1px solid #000 !important;
+    text-transform: uppercase !important;
+    font-size: 12px !important;
+  }
     
   #ctrl,
   #qf-ctrl.button {
-    font-size: 9pt !important;
+    text-transform: uppercase;
+    font-size: 12px !important;
     color: #5f5f5f !important;
     text-decoration: none !important;
     margin-top: 79px !important;
@@ -1901,7 +1863,8 @@
   }
 
   #qf-box {
-    outline: none !important;
+    border: none !important;
+    outline: 1px solid #000 !important;
   }
 
   input:focus, 
@@ -1932,13 +1895,6 @@
 
 
 @-moz-document regexp("https?://.*.(google.com/recaptcha/api2).*") { /*    RECAPTCHA    */
-  
-  *:not([class*="recaptcha-checkbox"]) {
-    color: var(--accent-color) !important; 
-    background: #fff !important;
-    border-color: #fff !important;
-    border-radius: 0 !important;
-  }
     
   .rc-anchor-center-container {
       border: solid 2px white !important;
@@ -1956,7 +1912,8 @@
 
   .rc-anchor-checkbox-label:after {
     content: "ロボットではない" !important;
-    font-size: 12pt !important;
+    font-size: 14px !important;
+    color: var(--accent-color) !important;
   }
     
   .rc-anchor-checkbox { 
@@ -1971,4 +1928,25 @@
   .rc-anchor-normal-footer { 
     display: none !important; 
   }
+  
+  .rc-anchor.rc-anchor-normal.rc-anchor-light {
+    border: none !important;
+  }
+  
+  .rc-imageselect-desc-wrapper, .rc-button-default {
+    background-color: var(--accent-color) !important;
+  }
+  
+  .rc-button-default:focus {
+    box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.2) inset !important;
+  }
+  
+  .rc-imageselect-target > div:focus {
+    outline-color: var(--accent-color) !important;
+  }
+  
+  .rc-imageselect-checkbox {
+    opacity: 0 !important;
+}
+  
 }
