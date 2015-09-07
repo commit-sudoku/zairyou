@@ -34,9 +34,25 @@ Installation
 Customization
 -------------------------------
 
-Go to line 15 and replace #cb073c with another hexdecimal color to change the accent color. 
+Accent Color:
 
-Go to line 112 and replace 'https://raw.githubusercontent.com/commit-sudoku/zairyou/master/res/bg/7.png' with a path to your own 1920x64 header image or use the ones I left commented.
+  Go to line 15 and replace #cb073c with another hexdecimal color to change the accent color. 
+
+
+Header Image:
+
+  Go to line 112 and replace 'https://raw.githubusercontent.com/commit-sudoku/zairyou/master/res/bg/7.png' with a path to your own 1920x64 header image or use the ones I left commented.
+
+
+Board Banner:
+
+  uncomment line 56
+  
+  edit lines 175, 186, and 194
+
+![dubs](https://raw.githubusercontent.com/commit-sudoku/zairyou/master/dubs.png)
+
+This style also comes with the added feature of checking dubs. When someone's post number ends in repeating intergers, a checkmark will be added behind it to notify you of this. If this funcionality bothers you, it can be disabled by commenting out all lines from 1748 to 1798.
 
 [1]: https://github.com/ccd0/4chan-x
 [2]: https://github.com/mudanaku/
@@ -45,7 +61,3 @@ Go to line 112 and replace 'https://raw.githubusercontent.com/commit-sudoku/zair
 [5]: http://i.imgur.com/x970AkQ.png
 [6]: https://addons.mozilla.org/en-us/firefox/addon/stylish/
 [7]: https://github.com/adobe-fonts/source-han-sans/tree/release
-
-![dubs](https://raw.githubusercontent.com/commit-sudoku/zairyou/master/dubs.png)
-
-This style also comes with the added feature of checking dubs. When someone's post number ends in repeating intergers, a checkmark will be added behind it to notify you of this. If this funcionality bothers you, it can be disabled by commenting out all lines from 1748 to 1798.
