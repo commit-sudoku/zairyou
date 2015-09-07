@@ -1931,6 +1931,8 @@
   
   .rc-anchor.rc-anchor-normal.rc-anchor-light {
     border: none !important;
+    background-color: #fff !important;
+    box-shadow: none !important;
   }
   
   .rc-imageselect-desc-wrapper, .rc-button-default {
