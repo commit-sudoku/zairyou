@@ -36,19 +36,22 @@ Customization
 
 ###### Accent Color:
 
-  Go to line 15 and replace #cb073c with another hexdecimal color to change the accent color. 
+  * Go to line 15
+  * Replace #cb073c with another hexdecimal color to change the accent color. 
 
 
 ###### Header Image:
 
-  Go to line 115 and replace 'https://raw.githubusercontent.com/commit-sudoku/zairyou/master/res/bg/7.png' with a path to your own 1920x64 header image or use the ones I left commented.
+  * Go to line 115
+  * replace 'https://raw.githubusercontent.com/commit-sudoku/zairyou/master/res/bg/7.png' with a path to your own 1920x64 header image or use the ones I left commented.
 
 
 ###### Board Banner:
+  * To hide the sidebar board banner:
+  * Uncomment line 56
+  * Edit lines 175, 186, and 194
 
-  uncomment line 56
-  
-  edit lines 175, 186, and 194
+###### Dubs:
 
 ![dubs](https://raw.githubusercontent.com/commit-sudoku/zairyou/master/dubs.png)
 
