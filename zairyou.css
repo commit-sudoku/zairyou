@@ -830,6 +830,8 @@
   }
 
   .hide-announcement::after {
+    display: block !important;
+    margin-top: 14px !important;
     color: #A8A8A8 !important;
     content: " HIDE ANNOUNCEMENT";
     font-size: 14px !important;
@@ -1530,6 +1532,11 @@
     color: var(--accent-color) !important;
   }
   
+  .party-hat {
+    left: 375px !important;
+    z-index: 1 !important;
+  }
+  
 
   /*
     
@@ -1888,6 +1895,11 @@
   #theme {
     background: #fff !important;
   }
+  
+   .party-hat {
+    left: 0px !important;
+    z-index: 1 !important;
+  }
 }
 
 
@@ -1931,8 +1943,6 @@
   
   .rc-anchor.rc-anchor-normal.rc-anchor-light {
     border: none !important;
-    background-color: #fff !important;
-    box-shadow: none !important;
   }
   
   .rc-imageselect-desc-wrapper, .rc-button-default {
