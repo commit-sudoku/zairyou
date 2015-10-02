@@ -1534,7 +1534,7 @@
   
   .party-hat {
     left: 375px !important;
-    z-index: 1 !important;
+    z-index: 60 !important;
   }
   
 
@@ -1898,7 +1898,7 @@
   
    .party-hat {
     left: 0px !important;
-    z-index: 1 !important;
+    z-index: 60 !important;
   }
 }
 
