@@ -62,7 +62,10 @@
   .postForm,
   .postingMode,
   .stylechanger,
-  .webm-title {
+  .webm-title,
+  .txt-no,
+	.txt-ctrl,
+  #togglePostFormLink {
     display: none !important;
   }
 
@@ -99,7 +102,7 @@
     
   */
 
-   #board-list::before {           /*   this is the header bar at the top   */             
+   #board-list::after {           /*   this is the header bar at the top   */             
     display: inline !important;
     content: "" !important;
     background-color: var(--accent-color) !important;
@@ -114,33 +117,39 @@
 /*     background-image: url('https://raw.githubusercontent.com/commit-sudoku/zairyou/master/res/bg/6.png') !important; */
     background-image: url('https://raw.githubusercontent.com/commit-sudoku/zairyou/master/res/bg/7.png') !important;
     
-    position: fixed !important;
-    top: 0px !important;
-    left: 0px !important;
-    width: 100% !important;
+    position: absolute !important;
+    top: -69px !important;
+    left: 100px !important;
+    min-width: 1920px !important;
     height: 64px !important;
     z-index: 3 !important;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important;
   }
 
   div.post div.postInfo span.postNum a:hover {
-      color: var(--accent-color) !important;
+     color: var(--accent-color) !important;
   }
   
-  #shortcuts::after {            /*   this is the white part of the sidebar   */   
+  .top-header.autohide #board-list::before {
+	   width: 0px !important;
+	}
+  
+  .top-header:not(.autohide) #board-list::before {            /*   this is the white part of the sidebar   */   
     content: "" !important;
     position: fixed !important;
     height: 100% !important;
     width: 256px !important;
 /*     border-right: 1px solid #dedede !important; */
-    top: 64px !important;
+    top: 77px !important;
     left: 0px !important;
     right: auto !important;
     bottom: auto !important;
     background: #fff !important;
-    z-index: 2 !important;
+    z-index: 3 !important;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important;
   }
+  
+  
   
   .boardBanner {    /*   banner */
     width: 0px !important;
@@ -162,10 +171,11 @@
     width: 0px !important;
   }
 
-  #board-list::after {
+  #custom-board-list::before {
     text-align: center !important;
     content: "掲示板" !important;
     width: 256px !important;
+    color: #a3a3a3 !important;
     border-top: 1px solid #dedede !important;
     border-bottom: 1px solid #dedede !important;
     background: #f5f5f5 !important;
@@ -174,7 +184,7 @@
     padding: 9px 0 9px 0 !important;
     top: 149px !important; /*     if you dont want the board banner change to 64px */
     left: 0 !important;
-    z-index: 3 !important;
+    z-index: 5 !important;
   }
   
   a.show-board-list-button,
@@ -375,12 +385,12 @@
   #boardNavDesktopFoot,
   #boardNavDesktopFoot .current {
     display:inline!important;
-    position:fixed!important;
+    position:absolute!important;
     font-size: 0 !important;
-    top:5000000px!important;
+    top:0px!important;
   }
 
-  #boardNavDesktopFoot .current::after {
+  #boardNavDesktopFoot .current::before {
     position: fixed !important;
     top: 19px !important;
     left: 28px !important;
@@ -525,15 +535,22 @@
   }
     
   .watch-thread-link {
-    position: relative !important;
-    margin-right: -5px !important;
-    top: 2px !important;
-    left: -3px !important;
-    width: 17px !important;
+    margin-top: -15px !important;
+    opacity: 0.4 !important;
+    width: 0 !important;
+  }
+  
+  .watch-thread-link::after {
+    content: url('https://raw.githubusercontent.com/commit-sudoku/zairyou/master/res/img/heart-outline.png');
   }
 
   .watch-thread-link.watched {
-    opacity: 0.5 !important;
+    opacity: 0.4 !important;
+    width: 0 !important;
+  }
+  
+  .watch-thread-link.watched::after {
+    content: url('https://raw.githubusercontent.com/commit-sudoku/zairyou/master/res/img/heart.png');
   }
 
    
@@ -566,6 +583,21 @@
     color: #828282 !important;
     text-decoration: none !important;
   }
+  
+  .file-oekaki i.fa::before {
+	  font-size: 0 !important;
+	}
+			  
+	.file-oekaki::after {
+	  font-size: 12px;
+		content: "編集";
+		margin-right: 1px;
+		margin-left: -6px;
+	}
+			  
+	.file-info a[target="_blank"] {
+		 margin-right: -4px !important;
+	}
 
   .postMessage {
     margin-left: 5px !important;
@@ -584,7 +616,7 @@
   .expanded-image > .post > .file > .fileThumb > .full-image {
     display: inline !important;
     margin-left: -14px !important;
-    margin-right: 0px !important;
+    margin-right: -25px !important;
     margin-top: 4px !important;
   }
     
@@ -715,7 +747,7 @@
     font-weight: normal !important;
     position: absolute !important;
     left: 0 !important;
-    z-index: 500 !important;
+    z-index: 40 !important;
     border-bottom: 1px solid #dedede !important;
     border-top: 1px solid #dedede !important;
   }
@@ -822,7 +854,7 @@
 
   .hide-announcement {
     width: 100% !important;
-    z-index: 10 !important;
+    z-index: 5 !important;
     text-decoration: none !important;
     cursor: pointer !important;
     font-size: 0 !important;
@@ -953,13 +985,33 @@
     font-size: 12pt !important;
     color: #212121 !important;
   }
+  
+  .subject {
+    color: #727272 !important;
+    font-size: 12pt !important;
+    font-weight: normal !important;
+    padding-right: 0px !important;
+    margin-left: 19px !important;
+    padding-top: 3px !important;
+    margin-right: 8px !important;
+  }
     
+  .post.op .postInfo.desktop .name {
+    font-family: Roboto !important;
+    font-size: 12pt !important;
+    font-weight: bold !important;
+    color: #000000 !important;
+    opacity: 0.87 !important;
+    margin-left: -2px !important;
+  }
+  
   .name {
     font-family: Roboto !important;
     font-size: 12pt !important;
     font-weight: bold !important;
     color: #000000 !important;
     opacity: 0.87 !important;
+    margin-left: -4px !important;
   }
 
   .useremail {
@@ -1077,13 +1129,13 @@
   }
 
   .backlink:first-of-type {
-    margin-left: 10px !important;
+    margin-left: 13px !important;
   }
       
   .backlink:after {
     content: url('https://raw.githubusercontent.com/commit-sudoku/zairyou/master/res/img/backlink.png') !important;
     font-size: 9pt !important;
-    margin-right: 4px !important;
+    margin-right: 5px !important;
   }
 
   .backlink:hover::after,
@@ -1118,15 +1170,6 @@
 
   .quote {
     color: #4CAF50 !important;
-  }
-
-  .subject {
-    color: #a8a8a8 !important;
-    font-size: 12pt !important;
-    font-weight: normal !important;
-    padding-right: 5px !important;
-    margin-left: 4px !important;
-    padding-top: 3px !important;
   }
 
   .quote a,
