@@ -1,4 +1,5 @@
 ![screenshot](https://raw.githubusercontent.com/commit-sudoku/zairyou/master/screenshot.png)
+old screenshot
 
 材料 - ZAIRYŌ
 -----------
@@ -44,12 +45,6 @@ Customization
 
   * Go to line 115
   * replace 'https://raw.githubusercontent.com/commit-sudoku/zairyou/master/res/bg/7.png' with a path to your own 1920x64 header image or use the ones I left commented.
-
-
-###### Board Banner:
-  * To hide the sidebar board banner:
-  * Uncomment line 56
-  * Edit lines 175, 186, and 194
 
 ###### Dubs:
 
