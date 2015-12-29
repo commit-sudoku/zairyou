@@ -101,8 +101,9 @@
     TOP BAR + SIDE BAR
     
   */
-
-   #board-list::after {           /*   this is the header bar at the top   */             
+  .top-header:not(.autohide) #board-list::after,
+  .top-header.autohide #board-list::after,
+  #board-list::after {           /*   this is the header bar at the top   */             
     display: inline !important;
     content: "" !important;
     background-color: var(--accent-color) !important;
@@ -170,8 +171,14 @@
   .top-header.autohide #bannerCnt img {
     width: 0px !important;
   }
-
-  #custom-board-list::before {
+  
+  .top-header.autohide #custom-board-list::before {
+    width: 0 !important; 
+    height: 0 !important;
+    content: "" !important;
+  }
+  
+  .top-header:not(.autohide) #custom-board-list::before {
     text-align: center !important;
     content: "掲示板" !important;
     width: 256px !important;
@@ -182,26 +189,16 @@
     font-size: 12pt !important;
     position: fixed !important;
     padding: 9px 0 9px 0 !important;
-    top: 149px !important; /*     if you dont want the board banner change to 64px */
+    top: 149px !important;
     left: 0 !important;
     z-index: 5 !important;
-  }
-  
-  a.show-board-list-button,
-  #header-bar.autohide .show-board-list-button,
-  .show-board-list-button,
-  #custom-board-list a[href="javascript:;"] {
-    opacity: 0 !important;
-    position: fixed !important;
-    top: 162px !important; /*     if you dont want the board banner change to 76px */
-    left: 0px !important;
   }
   
     #custom-board-list {
     display: inline !important;
     white-space: normal !important;
     position: relative !important;
-    top: 130px !important; /*     if you dont want the board banner change to 41px */
+    top: 130px !important;
     left: 106px !important;
     z-index: 4 !important;
   }
@@ -268,8 +265,7 @@
     transition: none !important;
   }
 
-  #header-bar.autohide #board-list::after,
-  #header-bar.autohide #board-list,
+  #header-bar.autohide #board-list a,
   #header-bar.autohide #shortcuts::after,
   .autohide #thread-watcher.dialog,
   .autohide #thread-stats,
@@ -278,20 +274,19 @@
     position: fixed !important;
     left: -500px !important;
   }
-    
-  a.show-board-list-button::after,
-  .show-board-list-button::after,
-  .show-board-list-button::after {
-    content: "++++++++++++++++++++++++++++++" !important;
-    height: 50px !important;
+  
+  .top-header.autohide .show-board-list-button {
+    display: none !important;
   }
   
-  .show-board-list-button {
+  .top-header:not(.autohide) .show-board-list-button {
     display:inherit!important;
     position:fixed!important;
-    top: 43px !important;
-    left:112px!important;
+    top: 158px !important;
+    left:-39px!important;
     z-index:499!important;
+    width: 246px !important;
+    padding: 0 !important;
   }
     
   .autohide body {
@@ -351,12 +346,6 @@
     transition: all 0.5s ease;
   }
 
-  #custom-board-list a[href="javascript:;"],
-  #full-board-list a[href="javascript:;"] {
-    padding:0!important;
-    padding-right:5px!important;
-    padding-left:5px!important;
-  }
 
   .hide-board-list-button {
     display:inherit!important;
@@ -380,26 +369,6 @@
 
   .fixed:root:not(.centered-links) #header-bar {
       white-space: normal;
-  }
-
-  #boardNavDesktopFoot,
-  #boardNavDesktopFoot .current {
-    display:inline!important;
-    position:absolute!important;
-    font-size: 0 !important;
-    top:0px!important;
-  }
-
-  #boardNavDesktopFoot .current::before {
-    position: fixed !important;
-    top: 19px !important;
-    left: 28px !important;
-    font-size: 16pt !important;
-    content: attr(title) !important;
-    color: #fff !important;
-    font-weight: 600 !important;
-    text-transform: uppercase !important;
-    z-index: 36 !important;
   }
 
   #board-list .current {
@@ -536,6 +505,7 @@
     
   .watch-thread-link {
     margin-top: -15px !important;
+    margin-right: 22px !important;
     opacity: 0.4 !important;
     width: 0 !important;
   }
@@ -986,14 +956,26 @@
     color: #212121 !important;
   }
   
-  .subject {
-    color: #727272 !important;
-    font-size: 12pt !important;
-    font-weight: normal !important;
-    padding-right: 0px !important;
-    margin-left: 19px !important;
-    padding-top: 3px !important;
-    margin-right: 8px !important;
+  .subject:not(:empty) {
+    position: fixed !important;
+    top: 19px !important;
+    left: 28px !important;
+    font-size: 16pt !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+/*     text-transform: uppercase !important; */
+    z-index: 36 !important;
+  }
+  
+  .subject:empty::after {
+    content: "無題のスレッド" !important;
+    position: fixed !important;
+    top: 19px !important;
+    left: 28px !important;
+    font-size: 16pt !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    z-index: 36 !important;
   }
     
   .post.op .postInfo.desktop .name {
@@ -1841,6 +1823,26 @@
   
   * {
     font-family: "Roboto", "Source Han Sans JP Regular", "Meiryo" !important;
+  }
+  
+  #boardNavDesktopFoot,
+  #boardNavDesktopFoot .current {
+    display:inline!important;
+    position:absolute!important;
+    font-size: 0 !important;
+    top:0px!important;
+  }
+
+  #boardNavDesktopFoot .current::before {
+    position: fixed !important;
+    top: 19px !important;
+    left: 28px !important;
+    font-size: 16pt !important;
+    content: attr(title) !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    z-index: 36 !important;
   }
   
   #globalToggle,
