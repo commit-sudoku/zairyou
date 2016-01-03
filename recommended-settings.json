@@ -1,0 +1,585 @@
+{
+  "version": "1.11.21.5",
+  "date": 1451784891399,
+  "Conf": {
+    "JSON Navigation": true,
+    "Use 4chan X Catalog": false,
+    "Index Refresh Notifications": true,
+    "Open Threads in New Tab": false,
+    "External Catalog": false,
+    "Catalog Links": true,
+    "Announcement Hiding": true,
+    "Desktop Notifications": true,
+    "404 Redirect": true,
+    "Archive Report": true,
+    "Exempt Archives from Encryption": false,
+    "Keybinds": true,
+    "Time Formatting": true,
+    "Relative Post Dates": true,
+    "Relative Date Title": false,
+    "Comment Expansion": true,
+    "File Info Formatting": true,
+    "Thread Expansion": true,
+    "Index Navigation": false,
+    "Reply Navigation": false,
+    "Custom Board Titles": true,
+    "Persistent Custom Board Titles": false,
+    "Show Updated Notifications": true,
+    "Color User IDs": true,
+    "Remove Spoilers": false,
+    "Reveal Spoilers": false,
+    "Normalize URL": true,
+    "Disable Autoplaying Sounds": false,
+    "Disable Native Extension": true,
+    "Enable Native Flash Embedding": true,
+    "Linkify": true,
+    "Link Title": true,
+    "Embedding": true,
+    "Auto-embed": false,
+    "Floating Embeds": true,
+    "Anonymize": false,
+    "Filter": true,
+    "Filtered Backlinks": false,
+    "Recursive Hiding": true,
+    "Thread Hiding Buttons": false,
+    "Reply Hiding Buttons": false,
+    "Stubs": true,
+    "Image Expansion": true,
+    "Image Hover": true,
+    "Image Hover in Catalog": false,
+    "Gallery": true,
+    "Fullscreen Gallery": false,
+    "PDF in Gallery": false,
+    "Oekaki Links": true,
+    "Sauce": true,
+    "WEBM Metadata": true,
+    "Reveal Spoiler Thumbnails": false,
+    "Replace GIF": false,
+    "Replace JPG": false,
+    "Replace PNG": false,
+    "Replace WEBM": false,
+    "Image Prefetching": false,
+    "Fappe Tyme": false,
+    "Werk Tyme": false,
+    "Autoplay": true,
+    "Restart when Opened": true,
+    "Show Controls": true,
+    "Click Passthrough": false,
+    "Allow Sound": true,
+    "Mouse Wheel Volume": true,
+    "Loop in New Tab": true,
+    "Volume in New Tab": true,
+    "Menu": true,
+    "Report Link": true,
+    "Thread Hiding Link": true,
+    "Reply Hiding Link": true,
+    "Delete Link": true,
+    "Download Link": true,
+    "Archive Link": true,
+    "Thread Updater": true,
+    "Unread Count": true,
+    "Quoted Title": true,
+    "Hide Unread Count at (0)": true,
+    "Unread Favicon": true,
+    "Unread Line": true,
+    "Remember Last Read Post": true,
+    "Scroll to Last Read Post": true,
+    "Thread Excerpt": true,
+    "Remove Thread Excerpt": false,
+    "Thread Stats": true,
+    "IP Count in Stats": true,
+    "Page Count in Stats": true,
+    "Updater and Stats in Header": true,
+    "Thread Watcher": true,
+    "Fixed Thread Watcher": true,
+    "Toggleable Thread Watcher": true,
+    "Mark New IPs": true,
+    "Quick Reply": true,
+    "QR Shortcut": true,
+    "Persistent QR": false,
+    "Auto Hide QR": false,
+    "Open Post in New Tab": true,
+    "Remember QR Size": false,
+    "Remember Spoiler": false,
+    "Randomize Filename": true,
+    "Show New Thread Option in Threads": false,
+    "Show Name and Subject": false,
+    "Cooldown": true,
+    "Posting Success Notifications": true,
+    "Auto-load captcha": false,
+    "Post on Captcha Completion": false,
+    "Bottom QR Link": true,
+    "Captcha Fixes": true,
+    "Use Recaptcha v1": true,
+    "Use Recaptcha v2 in Reports": false,
+    "Force Noscript Captcha": false,
+    "Pass Link": true,
+    "Quote Backlinks": true,
+    "OP Backlinks": true,
+    "Quote Inlining": true,
+    "Inline Cross-thread Quotes Only": false,
+    "Quote Hash Navigation": false,
+    "Forward Hiding": true,
+    "Quote Previewing": true,
+    "Quote Highlighting": true,
+    "Resurrect Quotes": true,
+    "Remember Your Posts": true,
+    "Mark Quotes of You": true,
+    "Highlight Posts Quoting You": true,
+    "Highlight Own Posts": true,
+    "Mark OP Quotes": true,
+    "Mark Cross-thread Quotes": true,
+    "Quote Threading": false,
+    "Fit width": true,
+    "Fit height": true,
+    "Scroll into view": true,
+    "Expand spoilers": true,
+    "Expand videos": true,
+    "Expand from here": false,
+    "Advance on contract": false,
+    "Hide Thumbnails": true,
+    "Fit Width": true,
+    "Fit Height": true,
+    "Stretch to Fit": false,
+    "Scroll to Post": true,
+    "Slide Delay": 6,
+    "Default Volume": 0.12,
+    "Current Board": false,
+    "Auto Update Thread Watcher": true,
+    "Auto Watch": true,
+    "Auto Watch Reply": true,
+    "Auto Prune": false,
+    "Show Unread Count": true,
+    "postID": "# Highlight dubs on [s4s]:\n#/(\\d)\\1$/;highlight;top:no;boards:s4s",
+    "name": "# Filter any namefags:\n#/^(?!Anonymous$)/",
+    "uniqueID": "# Filter a specific ID:\n#/Txhvk1Tl/",
+    "tripcode": "# Filter any tripfag\n#/^!/",
+    "capcode": "# Set a custom class for mods:\n#/Mod$/;highlight:mod;op:yes\n# Set a custom class for admins:\n#/Admin$/;highlight:admin;op:yes",
+    "subject": "# Filter Generals on /v/:\n#/general/i;boards:v;op:only",
+    "comment": "# Filter Stallman copypasta on /g/:\n#/what you're refer+ing to as linux/i;boards:g\n# Filter posts with 20 or more quote links:\n#/(?:>>\\d(?:(?!>>\\d)[^])*){20}/\n# Filter posts like T H I S / H / I / S:\n#/^>?\\s?\\w\\s?(\\w)\\s?(\\w)\\s?(\\w).*$[\\s>]+\\1[\\s>]+\\2[\\s>]+\\3/im",
+    "flag": "",
+    "filename": "",
+    "dimensions": "# Highlight potential wallpapers:\n#/1920x1080/;op:yes;highlight;top:no;boards:w,wg",
+    "filesize": "",
+    "MD5": "",
+    "sauces": "https://www.google.com/searchbyimage?image_url=%IMG%3Fs.jpg;text:検索\n#//iqdb.org/?url=%IMG;text: IQDB\n#http://eye.swfchan.com/search/?q=%name;types:swf;sandbox\n#//tineye.com/search?url=%IMG;text: TIN\n#https://www.yandex.com/images/search?rpt=imageview&img_url=%IMG\n#//saucenao.com/search.php?url=%IMG;text: SAUCE \n#http://3d.iqdb.org/?url=%IMG\n# tools:\n#http://regex.info/exif.cgi?imgurl=%URL\n#//imgops.com/%URL;types:gif,jpg,png\n# uploaders:\n#//imgur.com/upload?url=%URL;types:gif,jpg,png,pdf;text:アップ\n# \"View Same\" in archives:\n#https://archive.moe/_/search/image/%MD5/;text:View same on archive.moe\n#https://archive.moe/%board/search/image/%MD5/;text:View same on archive.moe/%board/;boards:a,an,biz,c,co,diy,fit,gd,gif,h,i,int,jp,k,m,mlp,out,po,qa,r9k,s4s,sci,tg,u,v,vg,vp,vr,wsg\n#https://rbt.asia/%board/image/%MD5;text:View same on RBT /%board/;boards:cgl,g,mu,qa,w",
+    "werk": false,
+    "Custom CSS": false,
+    "Index Mode": "paged",
+    "Previous Index Mode": "paged",
+    "Index Sort": "bump",
+    "Index Size": "small",
+    "Show Replies": true,
+    "Pin Watched Threads": false,
+    "Anchor Hidden Threads": true,
+    "Refreshed Navigation": false,
+    "Fixed Header": true,
+    "Header auto-hide": false,
+    "Header auto-hide on scroll": false,
+    "Bottom Header": false,
+    "Centered links": false,
+    "Header catalog links": true,
+    "Bottom Board List": true,
+    "Shortcut Icons": true,
+    "Custom Board Navigation": true,
+    "boardnav": "toggle-all\na-title\nb-title\nc-title\nd-title\ne-title\nfa-title\ng-title\nh-title\nint-title\njp-title\npol-title\nr9k-title\nu-title\nv-title\nvg-title\nw-title\nwg-title\nwsg-title\ny-title",
+    "QR.personas": "#options:\"sage\";boards:jp;always",
+    "sjisPreview": false,
+    "captchaLanguage": "",
+    "time": "%Y年%m月%d日 @ %I:%M:%S %p",
+    "backlink": ">>%id",
+    "fileInfo": "%l「%s %r」",
+    "favicon": "Mayhem",
+    "usercss": "",
+    "Toggle board list": "Ctrl+b",
+    "Toggle header": "Shift+h",
+    "Open empty QR": "q",
+    "Open QR": "Shift+q",
+    "Open settings": "Alt+o",
+    "Close": "Esc",
+    "Spoiler tags": "Ctrl+s",
+    "Code tags": "Alt+c",
+    "Eqn tags": "Alt+e",
+    "Math tags": "Alt+m",
+    "SJIS tags": "Alt+a",
+    "Toggle sage": "Alt+s",
+    "Submit QR": "Ctrl+Enter",
+    "Watch": "w",
+    "Update": "r",
+    "Expand image": "Shift+e",
+    "Expand images": "e",
+    "Open Gallery": "g",
+    "Pause": "p",
+    "Slideshow": "Ctrl+Right",
+    "fappeTyme": "f",
+    "werkTyme": "Shift+w",
+    "Front page": "1",
+    "Open front page": "Shift+1",
+    "Next page": "Ctrl+Right",
+    "Previous page": "Ctrl+Left",
+    "Paged mode": "Alt+1",
+    "Infinite scrolling mode": "Alt+2",
+    "All pages mode": "Alt+3",
+    "Open catalog": "Shift+c",
+    "Search form": "Ctrl+Alt+s",
+    "Cycle sort type": "Alt+x",
+    "Next thread": "Ctrl+Down",
+    "Previous thread": "Ctrl+Up",
+    "Expand thread": "Ctrl+e",
+    "Open thread": "o",
+    "Open thread tab": "Shift+o",
+    "Next reply": "j",
+    "Previous reply": "k",
+    "Deselect reply": "Shift+d",
+    "Hide": "x",
+    "Previous Post Quoting You": "Alt+Up",
+    "Next Post Quoting You": "Alt+Down",
+    "Beep": false,
+    "Auto Scroll": false,
+    "Bottom Scroll": false,
+    "Scroll BG": false,
+    "Auto Update": true,
+    "Optional Increase": false,
+    "Interval": 30,
+    "customCooldown": 0,
+    "customCooldownEnabled": true,
+    "hiddenThreads": {
+      "boards": {}
+    },
+    "hiddenPosts": {
+      "boards": {},
+      "lastChecked": 1445293333834
+    },
+    "lastReadPosts": {
+      "boards": {
+        "adv": {
+          "16207258": 16207294,
+          "16207722": 16207743
+        },
+        "t": {
+          "521528": 521528,
+          "646707": 646713,
+          "672466": 677802,
+          "673093": 673097
+        },
+        "g": {
+          "51971506": 51971506,
+          "52045308": 52053413,
+          "52045389": 52078260,
+          "52080571": 52080811,
+          "52083326": 52083735,
+          "52086030": 52092147,
+          "52086664": 52089938,
+          "52088207": 52091863,
+          "52089872": 52091896,
+          "52089907": 52091306,
+          "52090142": 52095183,
+          "52091855": 52101028,
+          "52111954": 52111954,
+          "52113614": 52122100,
+          "52114777": 52114838,
+          "52115138": 52117355,
+          "52117324": 52117546,
+          "52117855": 52117855,
+          "52117889": 52117913,
+          "52118033": 52118089,
+          "52120103": 52123173,
+          "52138969": 52139466,
+          "52139908": 52142527,
+          "52142595": 52149036,
+          "52142815": 52145910,
+          "52147808": 52147879,
+          "52153948": 52165004,
+          "52157862": 52164416,
+          "52164978": 52168416,
+          "52168415": 52169680,
+          "52180240": 52181098,
+          "52180708": 52183298,
+          "52181860": 52184500
+        },
+        "r9k": {
+          "23675577": 23675599
+        },
+        "d": {
+          "6483510": 6483521,
+          "6570279": 6572435,
+          "6571672": 6571674,
+          "6583679": 6602942,
+          "6602475": 6602574
+        },
+        "i": {
+          "451035": 451098,
+          "457953": 457960
+        },
+        "trash": {
+          "1178": 1178
+        },
+        "c": {
+          "2539703": 2540163,
+          "2541847": 2558549
+        },
+        "fa": {
+          "10735518": 10748444,
+          "10751911": 10752110,
+          "10761572": 10761818
+        },
+        "w": {
+          "1866153": 1871626,
+          "1866593": 1866603,
+          "1871530": 1873440
+        },
+        "wg": {
+          "6381064": 6399951,
+          "6413757": 6425904
+        },
+        "a": {
+          "135294711": 135295673,
+          "135295353": 135295554,
+          "135303503": 135303717,
+          "135311911": 135312208,
+          "135320126": 135326401,
+          "135322572": 135323312,
+          "135339024": 135339309,
+          "135343109": 135357696,
+          "135343882": 135350809,
+          "135346744": 135347166,
+          "135354174": 135357515,
+          "135356929": 135358137,
+          "135357969": 135359073,
+          "135358109": 135358919,
+          "135362386": 135362650,
+          "135364630": 135380440,
+          "135365639": 135365920,
+          "135366877": 135366877,
+          "135367200": 135367983,
+          "135372789": 135373058,
+          "135374069": 135382232,
+          "135378574": 135378703,
+          "135378731": 135379817,
+          "135379658": 135380638,
+          "135379870": 135379875,
+          "135380498": 135380536,
+          "135381995": 135390953,
+          "135382901": 135384476,
+          "135383432": 135387312,
+          "135387694": 135387806,
+          "135388513": 135393101,
+          "135390071": 135392914,
+          "135390859": 135394323,
+          "135391957": 135392240,
+          "135421677": 135426196,
+          "135423964": 135424268,
+          "135433837": 135434172,
+          "135434108": 135434411,
+          "135434982": 135435042,
+          "135435107": 135435134,
+          "135435346": 135435346,
+          "135441679": 135442478,
+          "135442193": 135444486,
+          "135452814": 135453331,
+          "135456555": 135456755,
+          "135460886": 135462296,
+          "135471867": 135478430,
+          "135474038": 135474711,
+          "135480478": 135482392,
+          "135484746": 135528964,
+          "135489562": 135496104,
+          "135489613": 135498790,
+          "135496448": 135502201,
+          "135497627": 135504439,
+          "135500249": 135500498,
+          "135504171": 135505208,
+          "135506723": 135528329,
+          "135513218": 135514087,
+          "135514425": 135514558,
+          "135519350": 135523734,
+          "135523703": 135528655,
+          "135525558": 135526920,
+          "135526828": 135528343,
+          "135527255": 135531299,
+          "135538839": 135596551,
+          "135552127": 135552927,
+          "135552490": 135552856,
+          "135553738": 135586289,
+          "135553779": 135556828,
+          "135556945": 135566674,
+          "135573264": 135575394,
+          "135575172": 135576286,
+          "135584609": 135586102
+        },
+        "wsg": {
+          "869597": 869779
+        },
+        "news": {
+          "6": 5006,
+          "10918": 10982,
+          "11259": 11273,
+          "11261": 11280
+        },
+        "wsr": {
+          "6067": 8970,
+          "8672": 11728
+        },
+        "h": {
+          "4125211": 4125215,
+          "4135814": 4138066,
+          "4137826": 4137904
+        },
+        "int": {
+          "52795633": 52798131,
+          "52796280": 52797015,
+          "52796562": 52796589
+        }
+      },
+      "lastChecked": 1451783078802
+    },
+    "yourPosts": {
+      "boards": {
+        "g": {
+          "52045389": {
+            "52057979": true,
+            "52062556": true
+          },
+          "52086030": {
+            "52092147": true
+          },
+          "52090142": {
+            "52092042": true,
+            "52092055": true,
+            "52092075": true
+          },
+          "52091855": {
+            "52092015": true
+          },
+          "52113614": {
+            "52117624": true
+          },
+          "52118033": {
+            "52118089": true
+          },
+          "52153948": {
+            "52154033": true,
+            "52154257": true,
+            "52154273": true,
+            "52154314": true,
+            "52154351": true,
+            "52154389": true
+          },
+          "52157862": {
+            "52161638": true
+          },
+          "52164978": {
+            "52165106": true,
+            "52165286": true
+          },
+          "52168415": {
+            "52168650": true
+          },
+          "52180708": {
+            "52182537": true,
+            "52183097": true,
+            "52183183": true
+          }
+        },
+        "wg": {
+          "6413757": {
+            "6418334": true,
+            "6419269": true,
+            "6419399": true,
+            "6424140": true
+          }
+        },
+        "a": {
+          "135480478": {
+            "135482269": true
+          },
+          "135504171": {
+            "135505086": true
+          },
+          "135523703": {
+            "135523962": true,
+            "135524334": true
+          },
+          "135527255": {
+            "135528436": true,
+            "135528869": true,
+            "135528928": true,
+            "135529024": true,
+            "135530040": true,
+            "135530302": true,
+            "135531299": true
+          }
+        },
+        "d": {
+          "6583679": {
+            "6597671": true
+          }
+        },
+        "w": {
+          "1871530": {
+            "1871857": true,
+            "1873440": true
+          }
+        }
+      },
+      "lastChecked": 1451783078791
+    },
+    "watchedThreads": {
+      "boards": {
+        "d": {
+          "6571672": {
+            "excerpt": "/d/ - traps in chastity",
+            "isDead": false,
+            "unread": 200,
+            "quotingYou": 0
+          },
+          "6583679": {
+            "excerpt": "/d/ - traps",
+            "isDead": false,
+            "unread": 23,
+            "quotingYou": 0
+          }
+        },
+        "wg": {
+          "6413757": {
+            "excerpt": "/wg/ - Official Desktop Thread #69",
+            "isDead": false,
+            "unread": 24,
+            "quotingYou": 0
+          }
+        },
+        "w": {
+          "1871530": {
+            "excerpt": "/w/ - Desktop Thread",
+            "isDead": false,
+            "unread": 0,
+            "quotingYou": 0
+          }
+        },
+        "a": {
+          "135553738": {
+            "excerpt": "/a/ - Yuru Yuri",
+            "isDead": false,
+            "unread": 23,
+            "quotingYou": 0
+          }
+        }
+      },
+      "lastChecked": 1451784637063
+    },
+    "customTitles": {
+      "boards": {}
+    },
+    "selectedArchives": {},
+    "cooldowns": {
+      "global": {},
+      "w": {
+        "1451784849952": {
+          "threadID": 1871530,
+          "postID": 1873440
+        }
+      }
+    },
+    "Except Archives from Encryption": false
+  }
+}
