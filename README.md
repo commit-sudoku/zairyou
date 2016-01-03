@@ -28,7 +28,9 @@ Installation
 * Navigate to the userstyles section of the [Addons] [4] page. 
 * Click on "Write New Style", give it a name, and paste the CSS there. 
 * Go into your 4chan X settings.
+* Turn ON 'Catalog Links'
 * Turn OFF 'Persistent QR', 'Thread Hiding Buttons', and 'Reply Hiding Buttons'
+* OPTIONAL: Turn ON 'Relative Post Dates' and Turn OFF 'Relative Date Title'
 * I'm not sure if there are any other settings needed for it to look right, so my settings are [here] [5].
 * Not necessary but [Source Han Sans] [7] is a great Japanese font, but if you don't have it installed this style will fall back to Meiryou
 
