@@ -416,15 +416,6 @@
     margin-left:0px!important;
   }
 
-  .replylink {
-    margin-left: 5px !important;
-    margin-right: 5px !important;
-    margin-top: 1px !important;
-    color: #069 !important;
-    text-decoration: none !important;
-    font-size: 9pt !important;
-  }
-
   .summary {
     position:absolute!important;
     right:32px!important;
@@ -959,28 +950,6 @@
     font-size: 12pt !important;
     color: #212121 !important;
   }
-  
-  .subject:not(:empty) {
-    position: fixed !important;
-    top: 19px !important;
-    left: 28px !important;
-    font-size: 16pt !important;
-    color: #fff !important;
-    font-weight: 600 !important;
-/*     text-transform: uppercase !important; */
-    z-index: 36 !important;
-  }
-  
-  .subject:empty::after {
-    content: "無題のスレッド" !important;
-    position: fixed !important;
-    top: 19px !important;
-    left: 28px !important;
-    font-size: 16pt !important;
-    color: #fff !important;
-    font-weight: 600 !important;
-    z-index: 36 !important;
-  }
     
   .post.op .postInfo.desktop .name {
     font-family: Roboto !important;
@@ -1041,7 +1010,6 @@
     color: #a8a8a8 !important;
   }
     
-  .pages a,
   .summary {
     color: #a6a6a6 !important;
   }
@@ -1183,45 +1151,6 @@
   .globalMessage a,
   .fileThumb > img:first-child {
     color: #a8a8a8 !important;
-  }
-  
-  /*
-    
-      Page Links
-    
-  */
-
-  .pagelist {
-    float: none !important;
-    width: 100% !important;
-    height:20px!important;
-    margin: 0 auto 0 auto!important;
-    padding:0!important;
-    font-size: 9pt !important;
-    color: transparent !important;
-    background: transparent !important;
-    border: none !important;
-    white-space: nowrap !important;
-  }
-
-  .pages {
-    margin-top: -4px !important;
-    text-align: center !important;
-    float: none !important;
-  }
-
-  .next,
-  .prev,
-  .pages.cataloglink,
-  .pagelist .prev input,
-  .pagelist .next input {
-    position: relative !important;
-    -moz-appearance: none !important;
-    width: 0 !important;
-    background: none !important;
-    color: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
   }
 
   /*
@@ -1819,11 +1748,182 @@
   }
 }
 
+@-moz-document regexp("http(|s):\/\/boards\.4chan\.org\/(.|..|...|....|.....)\/") {
+  
+  .page-num, .pages.cataloglink, .next, .prev {
+    display: none !important;
+  }
 
+  .pagelist {
+    float: none !important;
+    width: 100% !important;
+    height:20px!important;
+    margin: 0 auto 0 auto!important;
+    padding: 0 !important;
+    font-size: 9pt !important;
+    color: transparent !important;
+    background: transparent !important;
+    border: none !important;
+    white-space: nowrap !important;
+    padding-top: 13px !important;
+    padding-bottom: 18px !important;
+  }
 
+  .pages {
+    text-align: center !important;
+    float: none !important;
+    font-size: 0px !important;
+  }
+  
+  .pages a {
+    color: #000 !important;
+    font-size: 14px !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+  
+  .subject {
+    position: inherit !important;
+    font-weight: normal !important;
+    margin-right: 7px !important;
+    margin-left: -2px !important;
+    font-size: 12pt !important; 
+    color: #a8a8a8 !important;
+    text-transform: none !important;
+    z-index: 2 !important;
+  }
+  
+  .subject:empty {
+    margin-right: 0px !important;
+  }
+  
+  #boardNavDesktopFoot,
+  #boardNavDesktopFoot .current {
+    display:inline!important;
+    position:absolute!important;
+    font-size: 0 !important;
+    top:0px!important;
+  }
+  
+  #boardNavDesktopFoot .current::after {
+    position: fixed !important;
+    top: 19px !important;
+    left: 28px !important;
+    font-size: 16pt !important;
+    content: attr(title) !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    z-index: 36 !important;
+  }
+  
+  .summary {
+    position: absolute !important;
+    right: 150px !important;
+    margin-top: -48px !important;
+    z-index: 1 !important;
+    font-size: 9pt !important;
+    text-align: right !important;
+  }
+  
+  .postNum.desktop span {
+    font-size: 0 !important;
+  }
+  
+  .replylink {
+    text-transform: uppercase !important;
+    font-weight: Bold !important;
+    font-size: 0px !important;
+    margin-left: -2px !important;
+    margin-right: 0px !important;
+  }
+  
+  a.replylink:not(:hover) {
+    color: #000 !important;
+  }
+  
+  .catalog-thread {
+    background: #fff !important;
+    border-radius: 5px !important;
+    padding: 16px !important;
+    margin: 16px !important;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12) !important;
+  }
+  
+  .navLinks {
+   margin: 0 auto !important;
+   margin-bottom: -33px !important;  
+   margin-top: -19px !important;  
+   width: 768px !important;
+  }
+  
+  #index-search {
+    font-family: Roboto !important;
+    margin-top: -8px !important;
+    margin-left: 0px !important;
+    margin-right: -1px !important;
+    border: 1px solid #5F5F5F !important;
+    padding: 10px !important;
+    min-height: 38px !important;
+    width: 253px !important;
+  }
+  
+  #index-sort, #index-mode {
+    color: #000 !important;
+    float: none !important;
+    top: 115px !important;
+    font-family: Roboto !important;
+    border: 1px solid #5F5F5F !important;
+    text-transform: uppercase !important;
+    font-size: 12px !important;
+    padding: 10px !important;
+    width: 256px !important;
+  }
+  
+  #index-mode {
+    margin-right: -1px !important;
+    margin-top: 115px !important;
+  }
+    
+  #index-size {
+    color: #000 !important;
+    float: right !important;
+    margin-right: 5px !important;
+    margin-top: -1px !important;
+    top: 115px !important;
+    font-family: Roboto !important;
+    border: 1px solid #5F5F5F !important;
+    text-transform: uppercase !important;
+    font-size: 12px !important;
+  }
+}
 
+@-moz-document regexp("http(|s):\/\/boards\.4chan\.org\/(.|..|...|....|.....)\/thread/.*") {
+  
+  .subject:not(:empty) {
+    position: fixed !important;
+    top: 19px !important;
+    left: 28px !important;
+    font-size: 16pt !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+/*     text-transform: uppercase !important; */
+    z-index: 36 !important;
+  }
+  
+  .subject:empty::after {
+    content: "無題のスレッド" !important;
+    position: fixed !important;
+    top: 19px !important;
+    left: 28px !important;
+    font-size: 16pt !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    z-index: 36 !important;
+  }
+}
 
-@-moz-document regexp("https?://boards\\.4chan\\.org\\/(.|..|...|....)\\/catalog") { /*  CATALOG  */
+@-moz-document regexp("http(|s):\/\/boards\.4chan\.org\/(.|..|...|....|.....)\/catalog") { /*  CATALOG  */
   
   * {
     font-family: "Roboto", "Source Han Sans JP Regular", "Meiryo" !important;
